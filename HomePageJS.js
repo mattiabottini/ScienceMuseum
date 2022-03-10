@@ -56,6 +56,8 @@ function isEmail(input) {
 }
 
 
+
+
 function checkForm() {
     var mes = "";
     if (! exists(document.reservationForm.firstName.value))
@@ -70,12 +72,14 @@ function checkForm() {
       mes = mes + "Missing Date!\n";
       if (document.reservationForm.timeslot.value=="-")
       mes = mes + "Missing Timeslot!\n";
-    if (mes != "")
+    if (mes != ""){
       alert(mes);
+    }
     if (mes == "")
       alert("Ok, correct!\nThe form should now be sent to " +
             "the server through " +
   "document.reservationForm.submit()");
+
 }
 
 
