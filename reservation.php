@@ -10,6 +10,7 @@
 
     // Create connection
     $con = mysqli_connect($servername, "root", "root");
+    $con2 = mysqli_connect($servername, "root", "root");
     // Check connection
     if (!$con) { die('Could not connect: ' . mysqli_error($con)); }
 
@@ -19,6 +20,11 @@
         { die('Error: ' . mysqli_error($con)); }
     mysqli_close($con);
 
+    mysqli_select_db($con2,"mydb");
+    $sql="UPDATE availabilityNumbers SET firstslot=firstslot-$numbers where dates='$dates'";
+    if (!mysqli_query($con2,$sql))
+        { die('Error: ' . mysqli_error($con2)); }
+    mysqli_close($con2);
     echo "<header id='header'> <br><a class='header' href='./index.php'>National Museum of Colorado</a></header>
             <article id='content'> <h1>Book a Guided Visit</h1> <br>
             </article>

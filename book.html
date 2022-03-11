@@ -9,13 +9,13 @@
             <article id="content"> <h1>Book a Guided Visit</h1> <br>
                   <form name="reservationForm" action="reservation.php" method="post">
                     First Name: 
-                    <input type="text" name="firstName" id="firstName"> <br><br>
+                    <input type="text" name="firstName" id="firstName" required> <br><br>
                     Family Name: 
-                    <input type="text" name="familyName" id="familyName"> <br><br>
+                    <input type="text" name="familyName" id="familyName" required> <br><br>
                     Email: 
-                    <input type="text" name="email" id="email"> <br><br>
+                    <input type="text" name="email" id="email" required> <br><br>
                     Number of people:
-                    <select name="number" id="number">
+                    <select name="number" id="number" required>
                       <option value="-" selected disabled hidden>-</option> 
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -25,9 +25,9 @@
                       <option value="6">6</option>
                     </select><br><br>
                     Date:
-                    <input type="date" name="date" id="date" min='1899-01-01' max='2000-13-13' onclick="getToday();"> <br> <br>
+                    <input type="date" name="date" id="date" min='1899-01-01' max='2000-13-13' onclick="getToday();" required> <br> <br>
                     Timeslot:
-                    <select name="timeslot" id="timeslot">
+                    <select name="timeslot" id="timeslot" required>
                       <option value="-" selected disabled hidden >--:--</option>  
                       <option value="firstslot">8:00-9:00</option>
                       <option value="secondslot">9:00-10:00</option>
@@ -144,7 +144,7 @@
                 </table> 
             </article>
             <div class="navbar">
-                <a href="./HomePage.html">Home</a>
+                <a href="./index.php">Home</a>
                 <div class="subnav">
                   <button class="subnavbtn">Collections <i class="fa fa-caret-down"></i></button>
                   <div class="subnav-content">

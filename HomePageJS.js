@@ -60,8 +60,10 @@ function isEmail(input) {
 
 function checkForm() {
     var mes = "";
-    if (! exists(document.reservationForm.firstName.value))
+    if (! exists(document.reservationForm.firstName.value)){
       mes = mes + "Missing First Name!\n";
+      return false;
+    }
     if (! exists(document.reservationForm.familyName.value))
       mes = mes + "Missing Family Name!\n";
     if ((! exists(document.reservationForm.email.value)) || (!isEmail(document.reservationForm.email.value)))
