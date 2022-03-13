@@ -60,18 +60,13 @@ function checkForm() {
     var mes = "";
     if (! exists(document.reservationForm.firstName.value)){
       mes = mes + "Missing First Name!\n";
-      return false;
     }
     if (! exists(document.reservationForm.familyName.value))
       mes = mes + "Missing Family Name!\n";
-    if ((! exists(document.reservationForm.email.value)) || (!isEmail(document.reservationForm.email.value)))
+    if ((! exists(document.reservationForm.email.value)))
       mes = mes + "Incorrect Email!\n";
-    if (document.reservationForm.number.value=="-")
-      mes = mes + "Missing Number of people!\n";
     if (! exists(document.reservationForm.date.value))
       mes = mes + "Missing Date!\n";
-      if (document.reservationForm.timeslot.value=="-")
-      mes = mes + "Missing Timeslot!\n";
     if (mes != ""){
       alert(mes);
     }
