@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title> Book a Visit </title>
@@ -16,8 +17,7 @@
                     <input type="text" name="email" id="email" required> <br><br>
                     Number of people:
                     <select name="number" id="number" required>
-                      <option value="-" selected disabled hidden>-</option> 
-                      <option value="1">1</option>
+                      <option value="1" selected>1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
                       <option value="4">4</option>
@@ -28,8 +28,7 @@
                     <input type="date" name="date" id="date" min='1899-01-01' max='2000-13-13' onclick="getToday();" required> <br> <br>
                     Timeslot:
                     <select name="timeslot" id="timeslot" required>
-                      <option value="-" selected disabled hidden >--:--</option>  
-                      <option value="firstslot">8:00-9:00</option>
+                      <option value="firstslot" selected>8:00-9:00</option>
                       <option value="secondslot">9:00-10:00</option>
                       <option value="thirdslot">10:00-11:00</option>
                       <option value="fourthslot">11:00-12:00</option>

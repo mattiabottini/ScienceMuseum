@@ -56,8 +56,6 @@ function isEmail(input) {
 }
 
 
-
-
 function checkForm() {
     var mes = "";
     if (! exists(document.reservationForm.firstName.value)){
