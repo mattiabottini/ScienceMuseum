@@ -1,14 +1,14 @@
 <html>
     <head>
         <title> Science Museum </title>
-        <link rel="stylesheet" type="text/css" href="HomePage.css">
+        <link rel="stylesheet" type="text/css" href="book.css">
         <script src="HomePageJS.js"></script>
     </head>
     <body>
             <header id="header"> <br><a class="header" href="./HomePage.html">National Museum of Colorado</a></header>
             <article id="content"> <h1 id="changeText">Botanical Museum</h1>
-                <a class= "opening" href="#openingtimes">Opening Times</a>
-                <a class= "contact" href="./book.html">Book a visit</a>
+                <a class= "opening" href="#openingtimes">Info</a>
+                <a class= "contact" href="./book.html">Book a Guided visit</a>
             </article>
             <div class="navbar">
                 <a href="./HomePage.html">Home</a>
@@ -28,15 +28,6 @@
                     <a href="./book.html">Book a visit</a>
                   </div>
                 </div>
-                <div class="subnav">
-                    <button class="subnavbtn">About<i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                      <a href="#company">Company</a>
-                      <a href="#team">Team</a>
-                      <a href="#careers">Careers</a>
-                    </div>
-                  </div>
-                <a href="#openingtimes">Opening Times</a>
                 <a href="#contact">Contact</a>
               </div>
             <footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>

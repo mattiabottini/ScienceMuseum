@@ -7,6 +7,55 @@
     $numbers = intval($_POST['number']);
     $dates = $_POST['date'];
     $timeslot = $_POST['timeslot'];
+    echo "<link rel='stylesheet' type='text/css' href='./book.css' />";
+    $htmlAccepted='<header id="header"> <br><a class="header" href="./index.php">National Museum of Colorado</a></header>
+    <div class="navbar">
+    <a href="./index.php">Home</a>
+    <div class="subnav">
+      <button class="subnavbtn">Collections <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="./botany.html">Botany</a>
+        <a href="./zoology.html">Zoology</a>
+        <a href="./mineralogy.html">Mineralogy</a>
+        <a href="./archeology.html">Archeology</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="./info.html">Info</a>
+        <a href="./book.html">Book a visit</a>
+      </div>
+    </div>
+    <a href="./contact.html">Contact</a>
+  </div>
+<footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>
+<h1> Your reservation has been accepted!</h1>';
+
+$htmlNotAccepted='<header id="header"> <br><a class="header" href="./index.php">National Museum of Colorado</a></header>
+<div class="navbar">
+<a href="./index.php">Home</a>
+<div class="subnav">
+  <button class="subnavbtn">Collections <i class="fa fa-caret-down"></i></button>
+  <div class="subnav-content">
+    <a href="./botany.html">Botany</a>
+    <a href="./zoology.html">Zoology</a>
+    <a href="./mineralogy.html">Mineralogy</a>
+    <a href="./archeology.html">Archeology</a>
+  </div>
+</div>
+<div class="subnav">
+  <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
+  <div class="subnav-content">
+    <a href="./info.html">Info</a>
+    <a href="./book.html">Book a visit</a>
+  </div>
+</div>
+<a href="./contact.html">Contact</a>
+</div>
+<footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>
+<h1> Your reservation can not be accepted: NO AVAILABLE SEATS</h1>';
+
 
     // Create connection
     $con = mysqli_connect($servername, "root", "root");
@@ -32,12 +81,12 @@
         mysqli_close($con);
         mysqli_select_db($con2,"mydb");
         $sql="UPDATE availabilityNumbers SET firstslot=firstslot-$numbers where dates='$dates'";
-        echo "<h1> Your reservation has been accepted</h1>";
+        echo $htmlAccepted;
         if (!mysqli_query($con2,$sql))
           { die('Error: ' . mysqli_error($con2)); }
         mysqli_close($con2);
       } else{
-        echo "<h1> Your reservation can not be accepted: NO AVAILABLE SEATS</h1>";
+        echo $htmlNotAccepted;
       }
     }
 
@@ -56,12 +105,12 @@
         mysqli_close($con);
         mysqli_select_db($con2,"mydb");
         $sql="UPDATE availabilityNumbers SET secondslot=secondslot-$numbers where dates='$dates'";
-        echo "<h1> Your reservation has been accepted</h1>";
+        echo $htmlAccepted;
         if (!mysqli_query($con2,$sql))
           { die('Error: ' . mysqli_error($con2)); }
         mysqli_close($con2);
       } else {
-        echo "<h1> Your reservation can not be accepted: NO AVAILABLE SEATS</h1>";
+        echo $htmlNotAccepted;
       }
     }
 
@@ -80,12 +129,12 @@
         mysqli_close($con);
         mysqli_select_db($con2,"mydb");
         $sql="UPDATE availabilityNumbers SET thirdslot=thirdslot-$numbers where dates='$dates'";
-        echo "<h1> Your reservation has been accepted</h1>";
+        echo $htmlAccepted;
         if (!mysqli_query($con2,$sql))
           { die('Error: ' . mysqli_error($con2)); }
         mysqli_close($con2);
       } else {
-        echo "<h1> Your reservation can not be accepted: NO AVAILABLE SEATS</h1>";
+        echo $htmlNotAccepted;
       }
     }
 
@@ -104,12 +153,12 @@
         mysqli_close($con);
         mysqli_select_db($con2,"mydb");
         $sql="UPDATE availabilityNumbers SET fourthslot=fourthslot-$numbers where dates='$dates'";
-        echo "<h1> Your reservation has been accepted</h1>";
+        echo $htmlAccepted;
         if (!mysqli_query($con2,$sql))
           { die('Error: ' . mysqli_error($con2)); }
         mysqli_close($con2);
       } else {
-        echo "<h1> Your reservation can not be accepted: NO AVAILABLE SEATS</h1>";
+        echo $htmlNotAccepted;
       }
     }
 ?>
