@@ -1,12 +1,12 @@
 <html>
     <head>
         <title> Science Museum </title>
-        <link rel="stylesheet" type="text/css" href="book.css">
+        <link rel="stylesheet" type="text/css" href="./book.css">
         <script src="HomePageJS.js"></script>
     </head>
     <body>
             <header id="header"> <br><a class="header" href="./HomePage.html">National Museum of Colorado</a></header>
-            <article id="content"> <h1 id="changeText">Botanical Museum</h1>
+            <article id="contentHome"> <h2 id="changeText">Botanical Museum</h2>
                 <a class= "opening" href="#openingtimes">Info</a>
                 <a class= "contact" href="./book.html">Book a Guided visit</a>
             </article>
