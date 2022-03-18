@@ -5,7 +5,7 @@
         <script src="HomePageJS.js"></script>
     </head>
     <body>
-            <header id="header"> <br><a class="header" href="./index.php">National Museum of Colorado</a></header>
+            <header id="header"> <img class = "headerImage" src="./Logo.png"><br><a class="header" href="./index.php">National Museum of Colorado</a></header>
             <article id="contentHome"> <h2 id="changeText">Botanical Museum</h2>
                 <a class= "opening" href="#openingtimes">Info</a>
                 <a class= "contact" href="./book.html">Book a Guided visit</a>
