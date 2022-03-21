@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Contact Us </title>
+        <link rel="stylesheet" type="text/css" href="./book.css">
+        <script src="HomePageJS.js"></script>
+    </head>
+    <body>
+            <header id="header"> <br><a class="header" href="./index.php">National Museum of Colorado</a></header>
+            <article id="content"> <h1>Contact Us</h1>
+                  <h3>Do you need further information? Please contact us through this form!</h3>
+                  <h3>Indicate the <i>#ID</i> of your reservation in the "Subject" field if needed</h3> <br> <br>
+                  <form name="reservationForm" action="reservation.php" method="post">
+                    First Name: 
+                    <input type="text" name="firstName" id="firstName" required> <br><br>
+                    Family Name: 
+                    <input type="text" name="familyName" id="familyName" required> <br><br>
+                    Email: 
+                    <input type="email" name="email" id="email" required> <br><br>
+                    Subject:
+                    <input type="text" name="subject" id="subject" required> <br><br>
+                    Message:
+                    <textarea name="textarea" id="textarea" required></textarea> <br> <br>
+                    <input type="submit" name="submit" id="submit" value="Submit" onclick="checkForm();">
+                    <input type="reset" name="reset" id="reset" value="Reset"> <br><br>
+                  </form>
+                  <br> <hr> <br> <br>
+            </article>
+            <div class="navbar">
+                <a href="./index.php">Home</a>
+                <div class="subnav">
+                  <button class="subnavbtn">Collections <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <a href="./botany.html">Botany</a>
+                    <a href="./zoology.html">Zoology</a>
+                    <a href="./mineralogy.html">Mineralogy</a>
+                  </div>
+                </div>
+                <div class="subnav">
+                  <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                    <a href="./info.html">Info</a>
+                    <a href="./book.html">Book a visit</a>
+                  </div>
+                </div>
+                <a href="./contact.html">Contact</a>
+              </div>
+            <footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>
+    </body>
+</html>

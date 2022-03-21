@@ -1,5 +1,6 @@
 <html>
     <head>
+      <meta charset="UTF-8">
         <title> Science Museum </title>
         <link rel="stylesheet" type="text/css" href="./book.css">
         <script src="HomePageJS.js"></script>
