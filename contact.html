@@ -9,8 +9,8 @@
             <header id="header"> <br><a class="header" href="./index.php">National Museum of Colorado</a></header>
             <article id="content"> <h1>Contact Us</h1>
                   <h3>Do you need further information? Please contact us through this form!</h3>
-                  <h3>Indicate the <i>#ID</i> of your reservation in the "Subject" field if needed</h3> <br> <br>
-                  <form name="reservationForm" action="reservation.php" method="post">
+                  <br>
+                  <form name="contact" action="contactReservation.php" method="post">
                     First Name: 
                     <input type="text" name="firstName" id="firstName" required> <br><br>
                     Family Name: 
@@ -20,8 +20,8 @@
                     Subject:
                     <input type="text" name="subject" id="subject" required> <br><br>
                     Message:
-                    <textarea name="textarea" id="textarea" required></textarea> <br> <br>
-                    <input type="submit" name="submit" id="submit" value="Submit" onclick="checkForm();">
+                    <textarea name="textarea" id="textarea" maxlength="65534" required></textarea> <br> <br>
+                    <input type="submit" name="submit" id="submit" value="Submit" onclick="checkContactForm();">
                     <input type="reset" name="reset" id="reset" value="Reset"> <br><br>
                   </form>
                   <br> <hr> <br> <br>

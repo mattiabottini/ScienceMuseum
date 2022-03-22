@@ -27,7 +27,7 @@ h2 {
     background-color: lightblue;
     border: dotted 8px black;
     font-size: 80px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 
@@ -42,7 +42,6 @@ a.header {
     font-size: 40px;
     margin-left: 20%;
     margin-right: 25%;
-    font-weight: bold;
     color: #eee;
     text-shadow: 2px 2px 2px black;
 }
@@ -89,7 +88,6 @@ tr {
     margin-top: 25px;
     margin-left: 0px;
     text-align: center;
-    height:auto;
 }
 
 #contentHome {
@@ -193,14 +191,10 @@ a.opening {
     display: block;
 }
 
-#menu {
-    position: absolute;
-    padding: 10px;
-    top: 111px; left: 0px;
-    width: 109px;
-    height: 600px;
-    background-color: cyan;
-    background-size: cover;
+
+#textarea {
+    width: 400px;
+    height: 100px;
 }
 
 #footer {

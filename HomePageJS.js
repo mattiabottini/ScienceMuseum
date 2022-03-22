@@ -48,7 +48,7 @@ function isEmail(input) {
     var isAnEmail = false;
     if (input) {
       for (var i=0; i<input.length; i++) {
-        if (input.charAt(i) == "@") {
+        if (input.charAt(i) == "@" && input.charAt(i+1)!="") {
           isAnEmail = true;
   break; }
   } }
@@ -63,7 +63,7 @@ function checkForm() {
     }
     if (! exists(document.reservationForm.familyName.value))
       mes = mes + "Missing Family Name!\n";
-    if ((! exists(document.reservationForm.email.value)))
+    if ((! exists(document.reservationForm.email.value)) || (!isEmail(document.reservationForm.email.value)))
       mes = mes + "Incorrect Email!\n";
     if (! exists(document.reservationForm.date.value))
       mes = mes + "Missing Date!\n";
@@ -77,5 +77,27 @@ function checkForm() {
 
 }
 
+function checkContactForm() {
+  var mes = "";
+  if (! exists(document.contact.firstName.value)){
+    mes = mes + "Missing First Name!\n";
+  }
+  if (! exists(document.contact.familyName.value))
+    mes = mes + "Missing Family Name!\n";
+  if ((! exists(document.contact.email.value)) || (!isEmail(document.contact.email.value)))
+    mes = mes + "Incorrect Email!\n";
+  if (! exists(document.contact.subject.value))
+    mes = mes + "Missing Subject!\n";
+  if (! exists(document.contact.textarea.value))
+    mes = mes + "Missing Message!\n";
+  if (mes != ""){
+    alert(mes);
+  }
+  if (mes == "")
+    alert("Ok, correct!\nThe form should now be sent to " +
+          "the server through " +
+"document.reservationForm.submit()");
+
+}
 
 

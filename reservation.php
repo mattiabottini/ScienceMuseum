@@ -1,5 +1,4 @@
 <?php
-    /* Data Variables */
     $servername = "localhost";
     $firstName = $_POST['firstName'];
     $familyName = $_POST['familyName'];
@@ -29,8 +28,8 @@
     </div>
     <a href="./contact.html">Contact</a>
   </div>
-<footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>
-<h1> Your reservation has been accepted!</h1>';
+  <article id="content"> <h1> Your reservation has been accepted!</h1> </article>
+<footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>';
 
 $htmlNotAccepted='<header id="header"> <br><a class="header" href="./index.php">National Museum of Colorado</a></header>
 <div class="navbar">
@@ -53,8 +52,8 @@ $htmlNotAccepted='<header id="header"> <br><a class="header" href="./index.php">
 </div>
 <a href="./contact.html">Contact</a>
 </div>
-<footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>
-<h1> Your reservation can not be accepted: NO AVAILABLE SEATS</h1>';
+<article id="content"> <h1> Your reservation can not be accepted: NO AVAILABLE SEATS</h1> </article>
+<footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>';
 
 
     // Create connection
