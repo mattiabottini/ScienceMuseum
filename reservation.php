@@ -7,7 +7,7 @@
     $dates = $_POST['date'];
     $timeslot = $_POST['timeslot'];
     echo "<link rel='stylesheet' type='text/css' href='./book.css' />";
-    $htmlAccepted='<header id="header"> <br><a class="header" href="./index.php">National Museum of Colorado</a></header>
+    $htmlAccepted='<header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
     <div class="navbar">
     <a href="./index.php">Home</a>
     <div class="subnav">
@@ -31,7 +31,7 @@
   <article id="content"> <h1> Your reservation has been accepted!</h1> </article>
 <footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>';
 
-$htmlNotAccepted='<header id="header"> <br><a class="header" href="./index.php">National Museum of Colorado</a></header>
+$htmlNotAccepted='<header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
 <div class="navbar">
 <a href="./index.php">Home</a>
 <div class="subnav">

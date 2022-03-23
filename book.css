@@ -1,7 +1,7 @@
 body {
     margin: 0px; padding: 0px; font-size: 85%;
     color: black;
-    background-image: radial-gradient(white, lightgrey);
+    background-image: radial-gradient(white, lightgreen);
     font-family: 'marker';
     }
 
@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-    margin-top: 120px;
+    margin-top: 80px;
     text-align: center;
     background-color: lightblue;
     border: dotted 8px black;
@@ -30,30 +30,32 @@ h2 {
     font-weight: normal;
 }
 
+p {
+    color:red; 
+    display:inline-block; 
+    margin-right: 5px;
+}
 
 #header {
     height: 80px;
-    background-color: brown;
+    background-color: rgb(196, 164, 132);
     text-align: center;
 }
 
 a.header {
     text-decoration: none;
     font-size: 40px;
-    margin-left: 20%;
-    margin-right: 25%;
     color: #eee;
     text-shadow: 2px 2px 2px black;
+    vertical-align:middle;
 }
 
 .headerImage {
-    width: 110px;
+    width: 100px;
     height:50px;
-    border: solid black 2px;
-    border-radius: 7px;
-    float: left;
-    margin: 12px;
+    vertical-align:middle;
 }
+
 
 #times {
     margin:auto; width: auto; height: auto;
@@ -61,9 +63,23 @@ a.header {
 
 td {
     text-align: center;
-    border: 2px solid black;
     height: 50px;
+    background-color: white;
+    border: solid black;
     width: auto;
+}
+
+table {
+    border: 2px solid black;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr {
+    border: 2px solid black;
+    background-color: white;
+
 }
 
 .guided {
@@ -78,11 +94,6 @@ td {
     color: green;
 }
 
-
-tr {
-    border: 2px solid black;
-}
-
 #content {
     padding: 1em;
     margin-top: 25px;
@@ -91,13 +102,30 @@ tr {
 }
 
 #contentHome {
-    padding: 1em;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
     height:100%;
-    background-image: url('trees.jpg');
-    background-size: cover;
     text-align: center;
-    opacity: 0.9;
-    background-repeat: no-repeat;
+    background-image: url("./trees.jpg");
+    background-repeat: no-repeat ;
+    box-shadow: 0 0 5px 2px #282a2d;
+    line-height: 1.4;
+    background-size: 100%;
+}
+
+#contentHome1 {
+    margin: 10%;
+    height:auto;
+    text-align: center;
+    column-count: 2;
+}
+
+#contentCollection {
+    padding: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
 }
 
 a.contact {
@@ -127,6 +155,7 @@ a.opening {
 .navbar {
     position: absolute;
     text-align: center;
+    margin-top: 0px;
     top: 80px; left: 0px;
     height: auto;
     width: 100%;
@@ -161,7 +190,8 @@ a.opening {
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: brown;
+    background-color: rgb(196, 164, 132);
+    color: black;
     border: solid black 1px;
 }
 
@@ -169,7 +199,7 @@ a.opening {
     display: none;
     position: absolute;
     text-align: center;
-    background-color: brown;
+    background-color: rgb(196, 164, 132);
     width: auto;
     z-index: 1;
     border: solid black 1px;
@@ -178,7 +208,7 @@ a.opening {
 
 .subnav-content a {
     float: center;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -195,6 +225,21 @@ a.opening {
 #textarea {
     width: 400px;
     height: 100px;
+}
+
+.disclaimer {
+    margin-top: 50px;
+    position:fixed;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    border-top: 2px solid #ff5c62;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 5px 10px 5px 10px;
 }
 
 #footer {
