@@ -100,4 +100,8 @@ function checkContactForm() {
 
 }
 
+function closeDisclaimer () {
+  document.getElementById('disclaimer').remove();
+}
+
 

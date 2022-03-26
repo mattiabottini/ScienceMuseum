@@ -14,9 +14,15 @@ body {
 
 h1 {
     margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
     text-align: center;
-    background-color: yellowgreen;
+    background-color: pink;
     color: black;
+    border: solid black ;
+    border-radius: 10px;
+    width: fit-content;
     font-size: 50px;
     font-weight: bold;
 }
@@ -28,6 +34,28 @@ h2 {
     border: dotted 8px black;
     font-size: 80px;
     font-weight: normal;
+}
+
+.info {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px;
+    background-color: #ff5c62;
+    border: solid black ;
+    font-size: 30px;
+    width: fit-content;
+    font-weight: normal;
+}
+
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 50%;
+    padding: 1em;
 }
 
 p {
@@ -56,6 +84,11 @@ a.header {
     vertical-align:middle;
 }
 
+.tableImage {
+    width: 120px;
+    height: 100px;
+}
+
 
 #times {
     margin:auto; width: auto; height: auto;
@@ -67,6 +100,8 @@ td {
     background-color: white;
     border: solid black;
     width: auto;
+    padding: 5px;
+    font-size: 15px;
 }
 
 table {
@@ -128,6 +163,11 @@ tr {
     text-align: center;
 }
 
+#contentInfo {
+    height:auto;
+    text-align: center;
+}
+
 a.contact {
     background-color: red;
     color: black;
@@ -164,7 +204,6 @@ a.opening {
 }
 
 .navbar a{
-    float: center;
     display: inline-block;
     font-size: 20px;
     color: white;
@@ -174,7 +213,6 @@ a.opening {
 }
 
 .subnav {
-    float: center;
     display: inline-block;
     overflow: visible;
 }
@@ -227,7 +265,7 @@ a.opening {
     height: 100px;
 }
 
-.disclaimer {
+#disclaimer {
     margin-top: 50px;
     position:fixed;
     height: auto;
@@ -240,6 +278,11 @@ a.opening {
     font-weight: bold;
     background-color: #fff;
     padding: 5px 10px 5px 10px;
+}
+
+#close {
+    background-color: white;
+    color: red;
 }
 
 #footer {
