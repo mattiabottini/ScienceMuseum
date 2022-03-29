@@ -15,7 +15,7 @@
               <br> <br>
               <h2 id="changeText">Botanical Museum</h2>
                 <a class= "opening" href="#openingtimes">Info</a>
-                <a class= "contact" href="./book.html">Book a Guided visit</a>
+                <a class= "book" href="./book.html">Book a Guided visit</a>
             </article>
             <article id="contentHome1">              
             </article>

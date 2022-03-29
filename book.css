@@ -36,17 +36,39 @@ h2 {
     font-weight: normal;
 }
 
-.info {
-    margin-top: 10px;
+h3.info {
+    font-size: 24px;
+    color: purple;
+
+}
+
+.infoTitle {
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0px;
     text-align: center;
+    color: white;
+    background-color: blueviolet;
     padding: 5px;
-    background-color: #ff5c62;
-    border: solid black ;
-    font-size: 30px;
+    border: solid black;
+    font-size: 35px;
     width: fit-content;
     font-weight: normal;
+}
+
+.infoDescription {
+    color: black;
+    font-size: 17px;
+}
+
+li{
+    font-size: 15px;
+    padding: 5px;
+}
+
+ol {
+    margin: 0px;
 }
 
 .row {
@@ -55,6 +77,17 @@ h2 {
   
 .column {
     flex: 50%;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-left: 10px ;
+    padding: 2em;
+    border: solid black 2px;
+}
+
+.columnArrive {
+    margin: 10px;
+    border: solid black 2px;
+    flex: 33.3%;
     padding: 1em;
 }
 
@@ -88,6 +121,7 @@ a.header {
     width: 120px;
     height: 100px;
 }
+
 
 
 #times {
@@ -157,6 +191,7 @@ tr {
 }
 
 #contentCollection {
+    margin-top: 30px;
     padding: 1em;
     margin-left: 10px;
     margin-right: 10px;
@@ -168,7 +203,7 @@ tr {
     text-align: center;
 }
 
-a.contact {
+a.book {
     background-color: red;
     color: black;
     font-weight: bold;
@@ -178,6 +213,40 @@ a.contact {
     border-radius: 10px;
     margin: 5px;
     padding: 4px;
+}
+
+a.infoBook:hover{
+    opacity: 60%;
+}
+
+a.infoBook {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    border: solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 4px;
+}
+
+a.contact {
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    border: solid black;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+a.contact:hover{
+    opacity: 60%;
 }
 
 a.opening {

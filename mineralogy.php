@@ -8,7 +8,7 @@
 
   
   echo '<header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
-            <article id="contentCollection"> <h1> Mineralogy Section </h1>
+            <article id="content"> <h1> Mineralogy Section </h1>
             <h3>In our <i> Mineralogy Section </i> you can find: </h3> <br>';
             echo "<table>";
             echo "<tr> <td>Name</td> <td>Category</td><td>Color</td><td>Hardness <br> (Mohs Scale)</td><td>Museum Section</td><td>Image</td></tr>";
