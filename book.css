@@ -75,7 +75,15 @@ li{
     padding: 5px;
 }
 
+li.indexBlock{
+    font-size: 17px; width:fit-content; margin:auto;
+}
+
 ol {
+    margin: 0px;
+}
+
+ul {
     margin: 0px;
 }
 
@@ -89,12 +97,15 @@ ol {
     margin-right: 10px;
     margin-left: 10px ;
     padding: 2em;
-    border: solid black 2px;
+    border:none;
+    box-shadow: 0 0 5px 2px #282a2d;
+    background-size: 100%;
 }
 
 .columnArrive {
     margin: 10px;
-    border: solid black 2px;
+    border:none;
+    box-shadow: 0 0 5px 2px #282a2d;
     flex: 33.3%;
     padding: 1em;
 }
@@ -188,12 +199,6 @@ tr {
     background-size: 100%;
 }
 
-#contentHome1 {
-    margin: 10%;
-    height:auto;
-    text-align: center;
-    column-count: 2;
-}
 
 #contentCollection {
     margin-top: 30px;
@@ -221,12 +226,22 @@ a.bookHome {
     padding: 7px;
 }
 
-a.bookHome:hover{
-    background-color: rgb(177, 0, 0);
+
+a.mineralogy{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    border: solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 4px;
 }
 
-a.infoBook:hover{
-    background-color: rgb(177, 0, 0);
+a:hover{
+    filter: brightness(85%);
 }
 
 a.infoBook {
@@ -255,9 +270,6 @@ a.contact {
     padding: 4px;
 }
 
-a.contact:hover{
-    background-color: rgb(36, 59, 128);
-}
 
 a.infoHome {
     background-color: blueviolet;
@@ -272,9 +284,6 @@ a.infoHome {
     padding: 7px;
 }
 
-a.infoHome:hover{
-    background-color: rgb(50, 3, 94);
-}
 
 
 .navbar {

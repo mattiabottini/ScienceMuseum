@@ -32,31 +32,65 @@
                       <p class="infoDescription"> 
                       Our zoology collection is full of rare and very colorful animals belonging to different habitats. <br><br>Have a look at the zoology collection:
                       </p> <br><br>
-                      <a class="contact" href="./zoology.php" style="background-color:red;">Zoology</a>
+                      <a class="infoBook" href="./zoology.php">Zoology</a>
                     </div>
                     <div class="columnArrive">
                       <img src="logos/mineral.png" width="35px" height="40px" style="padding-top: 1em;"><h3 class="info">Mineralogy</h3>
                       <p class="infoDescription"> 
                       Our mineralogy collection is filled with rare and very precious minerals of different categories. <br><br>Have a look at the mineralogy collection:
                       </p> <br><br>
-                      <a class="contact" href="./mineralogy.php" style="background-color:orange;">Mineralogy</a>
+                      <a class="mineralogy" href="./mineralogy.php">Mineralogy</a>
                       </div>
                   </div>           
+            </article> <br><br>
+            <h2 class="homeTitle"> Information about the Museum</h2>
+            <article id="content"> 
+                <div class="row">
+                    <div class="column" style="background-image: url('./kokia.jpeg'); margin-right: 0px;">
+                    </div>
+                    <div class="column" style="margin-left: 0px;">
+                      <h3 class="info">Do you want basic information before visit the museum?</h3>
+                      <p class="infoDescription">If you want to know: </p> <br>
+                      <p class="infoDescription"><ul>
+                          <li class="indexBlock">More details about the visits</li> <br>
+                          <li class="indexBlock">How to arrive to the museum</li> <br>
+                        </ul></p>
+                      <p class="infoDescription">It is possible to check:</p><br><br><br>
+                      <a class="infoBook" href="./info.html" style="background-color:green;">Info about the museum</a>
+                    </div>
+                  </div>
             </article> <br><br>
             <h2 class="homeTitle"> Visit the Museum</h2>
             <article id="content"> 
                 <div class="row">
-                    <div class="column">
-                      <h3 class="info">Basic Visit</h3>
-                      <p class="infoDescription">The basic visit to the museum is completely free, a reservation is not necessary.<br><br>Cost: <br><br> Adults: 10$ <br> Children (maximum 14 years old): 5$</p> <br> 
-                      <p class="infoDescription">To cancel a reservation or further information:</p><br><br>
-                      <a class="contact" href="./contact.html">Contact Us</a>
-                    </div>
-                    <div class="column">
-                      <h3 class="info">Guided Visit</h3>
-                      <p class="infoDescription">The guided visit to the museum (only morning) costs: <br><br> 20$/person (no age distinction). <br><br>The reservation is mandatory.</p> <br>
+                    <div class="column" style="margin-right: 0px;">
+                    <h3 class="info">Do you want to visit the museum?</h3>
+                      <p class="infoDescription">There's the possibility to have: </p> <br>
+                      <p class="infoDescription"><ul>
+                          <li class="indexBlock">Basic Visit (no reservation needed)</li> <br>
+                          <li class="indexBlock">Guided Visit (reservation is mandatory)</li> <br>
+                        </ul></p>
                       <p class="infoDescription">It is possible to book a guided visit only through the form:</p><br><br><br>
                       <a class="infoBook" href="./book.html">Book a Guided Visit</a>
+                    </div>
+                    <div class="column" style="background-image: url('./blackFootedFerret.jpeg'); margin-left: 0px;">
+                    </div>
+                  </div>
+            </article> <br><br>
+            <h2 class="homeTitle"> Contact Us</h2>
+            <article id="content"> 
+                <div class="row">
+                    <div class="column" style="background-image: url('./caclite.jpeg'); margin-right: 0px;">
+                    </div>
+                    <div class="column" style="margin-left: 0px;">
+                      <h3 class="info">Do you want more information before visit the museum?</h3>
+                      <p class="infoDescription">If you want to: </p> <br>
+                      <p class="infoDescription"><ul>
+                          <li class="indexBlock">Know something that you can't find on the website</li> <br>
+                          <li class="indexBlock">Cancel your reservation for a guided visit</li> <br>
+                        </ul></p>
+                      <p class="infoDescription">It is possible to submit a form:</p><br><br><br>
+                      <a class="contact" href="./contact.html">Contact Us</a>
                     </div>
                   </div>
             </article> <br><br>
