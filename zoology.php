@@ -9,7 +9,7 @@
   
   echo '<header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
             <article id="content"> <h1> Zoology Section </h1>
-            <h3>In our <i> Zoology section </i> you can find: </h3> <br>';
+            <h3>In our <i> Zoology Section </i> you can find: </h3> <br>';
             echo "<table>";
             echo "<tr> <td>Name</td> <td>Scientific Name</td> <td>Family</td><td>Color</td><td>Habitat</td><td>Conservation Status</td><td>Museum Section</td><td>Image</td></tr>";
             while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
