@@ -49,7 +49,7 @@
                     <div class="column" style="background-image: url('./kokia.jpeg'); margin-right: 0px;">
                     </div>
                     <div class="column" style="margin-left: 0px;">
-                      <h3 class="info">Do you want basic information before visit the museum?</h3>
+                      <h3 class="info">Do you want basic information before visiting the museum?</h3>
                       <p class="infoDescription">If you want to know: </p> <br>
                       <p class="infoDescription"><ul>
                           <li class="indexBlock">More details about the visits</li> <br>
@@ -83,13 +83,13 @@
                     <div class="column" style="background-image: url('./caclite.jpeg'); margin-right: 0px;">
                     </div>
                     <div class="column" style="margin-left: 0px;">
-                      <h3 class="info">Do you want more information before visit the museum?</h3>
+                      <h3 class="info">Do you want further information?</h3>
                       <p class="infoDescription">If you want to: </p> <br>
                       <p class="infoDescription"><ul>
                           <li class="indexBlock">Know something that you can't find on the website</li> <br>
                           <li class="indexBlock">Cancel your reservation for a guided visit</li> <br>
                         </ul></p>
-                      <p class="infoDescription">It is possible to submit a form:</p><br><br><br>
+                      <p class="infoDescription">It is possible to submit the following form:</p><br><br><br>
                       <a class="contact" href="./contact.html">Contact Us</a>
                     </div>
                   </div>
