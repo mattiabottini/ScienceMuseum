@@ -94,9 +94,7 @@ function checkContactForm() {
     alert(mes);
   }
   if (mes == "")
-    alert("Ok, correct!\nThe form should now be sent to " +
-          "the server through " +
-"document.reservationForm.submit()");
+    alert("Ok, correct!\n Your request should have been sent");
 
 }
 

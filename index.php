@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="./book.css">
         <link rel="icon" type="image/x-icon" href="./logo.svg">
         <script src="HomePageJS.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
             <header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>

@@ -9,13 +9,13 @@
         <header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
             <article id="content"> <h1>Book a Guided Visit</h1> <br>
                   <form name="reservationForm" action="reservation.php" method="post">
-                    First Name: 
+                    <label for="firstName">First Name:</label> 
                     <input type="text" name="firstName" id="firstName" required> <br><br>
-                    Family Name: 
+                    <label for="familyName">Family Name: </label>
                     <input type="text" name="familyName" id="familyName" required> <br><br>
-                    Email: 
+                    <label for="email">Email:</label>
                     <input type="email" name="email" id="email" required> <br><br>
-                    Number of people:
+                    <label for="number">Number of people:</label>
                     <select name="number" id="number" required>
                       <option value="1" selected>1</option>
                       <option value="2">2</option>
@@ -24,9 +24,9 @@
                       <option value="5">5</option>
                       <option value="6">6</option>
                     </select><br><br>
-                    Date:
+                    <label for="date">Date:</label>
                     <input type="date" name="date" id="date" min='1899-01-01' max='2000-13-13' onclick="getToday();" required> <br> <br>
-                    Timeslot:
+                    <label for="timeslot">Timeslot:</label>
                     <select name="timeslot" id="timeslot" required>
                       <option value="firstslot" selected>8:00-9:00</option>
                       <option value="secondslot">9:00-10:00</option>

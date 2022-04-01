@@ -11,15 +11,15 @@
                   <h3>Do you need further information? Please contact us through this form!</h3>
                   <br>
                   <form name="contact" action="contactReservation.php" method="post">
-                    First Name: 
+                    <label for="firstName">First Name:</label> 
                     <input type="text" name="firstName" id="firstName" required> <br><br>
-                    Family Name: 
+                    <label for="familyName">Family Name: </label>
                     <input type="text" name="familyName" id="familyName" required> <br><br>
-                    Email: 
+                    <label for="email">Email:</label>
                     <input type="email" name="email" id="email" required> <br><br>
-                    Subject:
+                    <label for="subject">Subject:</label>
                     <input type="text" name="subject" id="subject" required> <br><br>
-                    Message:
+                    <label for="textarea">Message:</label>
                     <textarea name="textarea" id="textarea" maxlength="65534" required></textarea> <br> <br>
                     <input type="submit" name="submit" id="submit" value="Submit" onclick="checkContactForm();">
                     <input type="reset" name="reset" id="reset" value="Reset"> <br><br>
