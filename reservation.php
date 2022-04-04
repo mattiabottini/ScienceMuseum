@@ -7,6 +7,7 @@
     $dates = $_POST['date'];
     $timeslot = $_POST['timeslot'];
     echo "<link rel='stylesheet' type='text/css' href='./book.css' />";
+    echo "<meta name='viewport' content='width=device-width, initial-scale=1'>";
     $htmlAccepted='<header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
     <div class="navbar">
     <a href="./index.php">Home</a>

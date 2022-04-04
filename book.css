@@ -109,6 +109,7 @@ ul {
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 0px;
+    padding-bottom: 20px;
     border:none;
     box-shadow: 0 0 5px 2px #282a2d;
 }
@@ -370,6 +371,22 @@ a.bigButton {
 }
 
 @media screen and (max-width: 600px) {
+  
+
+    h1 {
+        margin-top: 200px;
+        font-size: 8vw;
+    }
+
+    h2.infoTitle{
+        font-size: 6vw;
+    }
+
+    h3{
+        font-size: 2.8vw;
+    }
+
+
 
     #header{
         width: 100%;
@@ -384,6 +401,33 @@ a.bigButton {
         width: 12vw;
         height: 9vw;
         vertical-align:middle;
+    }
+
+    #times{
+        display: none;
+    }
+
+    table {
+        display: flex;  
+        flex-wrap: nowrap;
+        justify-content: center;
+        border: none;
+    }
+        
+    tr {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+        
+    td {
+        white-space:nowrap;
+        height: fit-content;
+        font-size: 3vw;
+    }
+
+    td.lastRow {
+        margin-bottom: 4vw;
     }
     
     .navbar a {
@@ -415,7 +459,7 @@ a.bigButton {
 
     .subnav-content {
         display: none;
-        position:absolute;
+        position: absolute;
         text-align: center;
         width: auto;
     }
@@ -456,8 +500,7 @@ a.bigButton {
 
     .column{
         margin: 0px;
-        padding: 10px;
-        
+        padding: 20px;
     }
 
     .homeTitle {
@@ -480,11 +523,24 @@ a.bigButton {
     }
 
     .infoDescription{
+        font-size: 3vw;
+    }
+
+    ul{
         font-size: 2.5vw;
+        padding-left: 17px;
+    }
+
+    li {
+        font-size: 3vw;
     }
 
     li.indexBlock{
-        font-size: 2.5vw;
+        font-size: 3vw;
+    }
+
+    #textarea {
+        width: auto;
     }
 
     #disclaimer {

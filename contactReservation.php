@@ -6,6 +6,7 @@
     $subject = $_POST['subject'];
     $message = $_POST['textarea'];
     echo "<link rel='stylesheet' type='text/css' href='./book.css'/>";
+    echo "<meta name='viewport' content='width=device-width, initial-scale=1'>";
     $contactAccepted='<header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
     <div class="navbar">
     <a href="./index.php">Home</a>
