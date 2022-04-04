@@ -91,16 +91,31 @@ ul {
 .row {
     display: flex;
   }
+
+
+.imageColumn{
+    flex: 50%;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    border:none;
+    box-shadow: 0 0 5px 2px #282a2d;
+}
   
 .column {
     flex: 50%;
     margin-top: 0px;
-    margin-right: 10px;
-    margin-left: 10px ;
-    padding: 2em;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
     border:none;
     box-shadow: 0 0 5px 2px #282a2d;
-    background-size: 100%;
+}
+
+.extraImage{
+    width: 100%;
+    height: 100%;
 }
 
 .columnArrive {
@@ -214,51 +229,13 @@ tr {
     text-align: center;
 }
 
-a.bookHome {
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    text-decoration: none;
-    border: solid black;
-    border-radius: 10px;
-    text-shadow: 1px 1px 1px black;
-    margin: 5px;
-    padding: 7px;
-}
-
-
-a.mineralogy{
-    background-color: orange;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    text-shadow: 1px 1px 1px black;
-    text-decoration: none;
-    border: solid black;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 4px;
-}
 
 a:hover{
     filter: brightness(85%);
 }
 
-a.infoBook {
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    text-shadow: 1px 1px 1px black;
-    text-decoration: none;
-    border: solid black;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 4px;
-}
 
-a.contact {
+a.littleButton {
     background-color: royalblue;
     color: white;
     font-weight: bold;
@@ -272,7 +249,7 @@ a.contact {
 }
 
 
-a.infoHome {
+a.bigButton {
     background-color: blueviolet;
     color: white;
     font-weight: bold;
@@ -284,7 +261,6 @@ a.infoHome {
     border-radius: 10px;
     padding: 7px;
 }
-
 
 
 .navbar {
@@ -299,6 +275,7 @@ a.infoHome {
 }
 
 .navbar a{
+    position: relative;
     display: inline-block;
     font-size: 20px;
     color: white;
@@ -348,6 +325,7 @@ a.infoHome {
 .subnav-content a:hover {
     background-color: #eee;
     color: black;
+    background-size: 100% ;
 }
 
 .subnav:hover .subnav-content {
@@ -403,15 +381,17 @@ a.infoHome {
     }
     
     .headerImage {
-        width: 100px;
-        height:50px;
+        width: 12vw;
+        height: 9vw;
         vertical-align:middle;
     }
     
     .navbar a {
       font-size: 1em;
-      width: auto;
+      width: 99.5%;
       height: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
     }
 
     .subnavbtn{
@@ -433,6 +413,13 @@ a.infoHome {
         font-size: 1em;
     }
 
+    .subnav-content {
+        display: none;
+        position:absolute;
+        text-align: center;
+        width: auto;
+    }
+
     #changeText {
         margin-top: 20px;
         font-size: 6vw;
@@ -447,33 +434,68 @@ a.infoHome {
         background-size: cover;
     }
 
-
-    a.infoHome {
-        margin-top: 2vw;
-        font-size: 2vw;
+    .columnArrive{
+        margin-top: 20px;
     }
 
-    a.bookHome{
-       margin-top: 2vw;
-       font-size: 2vw;
+    .row{
+        display: block;
+    }
+
+    .extraImage{
+        width: max-content;
+        height: 60vw;
+        width: 100%;
+    }
+
+    .imageColumn{
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    .column{
+        margin: 0px;
+        padding: 10px;
+        
+    }
+
+    .homeTitle {
+        font-size: 5vw;
+    }
+
+
+    a.bigButton {
+        margin-top: 4vw;
+        font-size: 4vw;
+    }
+
+    a.littleButton {
+        margin-top: 4vw;
+        font-size: 3.5vw;
+    }
+
+    h3.info{
+        font-size: 4vw;
+    }
+
+    .infoDescription{
+        font-size: 2.5vw;
+    }
+
+    li.indexBlock{
+        font-size: 2.5vw;
     }
 
     #disclaimer {
-        margin-top: 50px;
-        margin-right: 40px;
         position:fixed;
         height: auto;
         width: auto;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        border-top: 2px solid #ff5c62;
-        text-align: center;
-        font-size: 10px;
+        font-size: 2vw;
     }
 
     #footer {
        width: auto;
-       font-size: 1em;
+       font-size: 2vw;
     }
 }
