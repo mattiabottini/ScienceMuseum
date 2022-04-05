@@ -28,7 +28,7 @@
     </div>
     <a href="./contact.html">Contact</a>
   </div>
-  <article id="content"> <h1> Your contact form has been sent! </h1> </article>
+  <article id="content"> <h1 class="reservationAccepted"> Your contact form has been sent! </h1> </article>
 <footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>';
 
 

@@ -14,7 +14,7 @@
             <article id="content"> <h1> Botany Section </h1>
             <h3>In our <i> Botany Section </i> you can find: </h3> <br>';
             echo "<table>";
-            echo "<tr> <td>Name</td> <td>Scientific Name</td> <td>Family</td><td>Color</td><td>Origin</td><td>Conservation Status</td><td>Museum Section</td><td class='lastRow'>Image</td></tr>";
+            echo "<tr class='tableDescription'> <td>Name</td> <td>Scientific Name</td> <td>Family</td><td>Color</td><td>Origin</td><td>Conservation Status</td><td>Museum Section</td><td class='lastRow'>Image</td></tr>";
             while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
               echo "<tr><td>" . $row['name'] . "</td><td>" . $row['scientificName'] . "</td><td>" . $row['family'] . "</td><td>" . $row['flowerColor'] . "</td><td>" . $row['origin'] . "</td><td>" . $row['conservationStatus'] . "</td><td>" . $row['museumSection'] . "</td><td class='lastRow'>" . '<img class="tableImage" src="data:image/jpeg;base64,'.base64_encode($row['image']).'" alt="plant image"/>' . "</td></tr>";
             }

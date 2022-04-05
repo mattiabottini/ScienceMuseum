@@ -29,22 +29,30 @@
                     <input type="date" name="date" id="date" min='1899-01-01' max='2000-13-13' onclick="getToday();" required> <br> <br>
                     <label for="timeslot">Timeslot:</label>
                     <select name="timeslot" id="timeslot" required>
-                      <option value="firstslot" selected>8:00-9:00</option>
-                      <option value="secondslot">9:00-10:00</option>
-                      <option value="thirdslot">10:00-11:00</option>
-                      <option value="fourthslot">11:00-12:00</option>
+                      <option value="firstslot" selected>9:00-10:00</option>
+                      <option value="secondslot">10:00-11:00</option>
+                      <option value="thirdslot">11:00-12:00</option>
+                      <option value="fourthslot">12:00-13:00</option>
                     </select><br><br>
                     <input type="submit" name="submit" id="submit" value="Submit" onclick="checkForm();">
                     <input type="reset" name="reset" id="reset" value="Reset"> <br><br>
                   </form>
                   <br> <hr> <br> <br>
+                  <article id="timesDescription"><p class="infoDescription"> 
+                    <ul>
+                      <li><p style="color: blue;">OPEN (GUIDED visits)</p> every day at morning for guided visits: <br>9-10 (1^slot), 10-11 (2^slot), 11-12 (3^slot), 12-13 (4^slot)</li> <br>
+                      <li>Tuesday, Friday afternoon :   <p style="color: red;">CLOSED</p>(15:00-18:00)</li> <br>
+                      <li>Monday, Wednesday, Thursday, Saturday, Sunday afternoon :<br><p style="color: blue;">OPEN (ONLY BASIC visits)</p>(15:00-18:00)</li> <br>
+                    </ul>
+                    </p>
+                   </article> 
                   <table id="times" cellpadding="5">
                     <tr>
                         <td>
                             <b>Day/Period</b></br>
                         </td>
                         <td>
-                            <b>8:00-9:00</b><br>
+                            <b>9:00-10:00</b><br>
                             <b>1^slot</b>
                         </td>
                         <td>

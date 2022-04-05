@@ -29,7 +29,7 @@
     </div>
     <a href="./contact.html">Contact</a>
   </div>
-  <article id="content"> <h1> Your reservation has been accepted!</h1> </article>
+  <article id="content"> <h1 class="reservationAccepted"> Your reservation has been accepted!</h1> </article>
 <footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>';
 
 $htmlNotAccepted='<header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
@@ -53,7 +53,7 @@ $htmlNotAccepted='<header id="header"><br> <img class = "headerImage" src="./log
 </div>
 <a href="./contact.html">Contact</a>
 </div>
-<article id="content"> <h1> Your reservation can not be accepted: NO AVAILABLE SEATS</h1> </article>
+<article id="content"> <h1 class="reservationRefused"> Your reservation can not be accepted: NO AVAILABLE SEATS</h1> </article>
 <footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>';
 
 

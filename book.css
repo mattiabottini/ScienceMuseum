@@ -16,7 +16,7 @@ body {
 
 
 h1 {
-    margin-top: 60px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
@@ -29,6 +29,19 @@ h1 {
     font-size: 50px;
     font-weight: bold;
 }
+
+h1.reservationAccepted {
+    background-color: green;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+h1.reservationRefused {
+    background-color: red;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
 
 .homeTitle {
     font-size: 48px;
@@ -76,6 +89,10 @@ li{
     padding: 5px;
 }
 
+li.car {
+    font-size: 13px;
+}
+
 li.indexBlock{
     font-size: 17px; width:fit-content; margin:auto;
 }
@@ -106,8 +123,8 @@ ul {
 .column {
     flex: 50%;
     margin-top: 0px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 0px;
     padding-bottom: 20px;
     border:none;
@@ -162,6 +179,10 @@ a.header {
 
 #times {
     margin:auto; width: auto; height: auto;
+}
+
+#timesDescription {
+    display: none;
 }
 
 td {
@@ -370,12 +391,207 @@ a.bigButton {
     padding-right: 1em;
 }
 
+
+@media screen and (max-width: 1260px) and (min-width: 601px) {
+  
+
+    h1 {
+        margin-top: 80px;
+        font-size: 4vw;
+    }
+
+    h1.reservationAccepted {
+        background-color: green;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-size: 3.2vw;
+    }
+    
+    h1.reservationRefused {
+        background-color: red;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-size: 3.2vw;
+    }
+
+    h2.infoTitle{
+        font-size: 3vw;
+    }
+
+    h3{
+        font-size: 2vw;
+    }
+
+    #header{
+        width: 100%;
+    }
+
+    a.header {
+        width: 100%;
+        font-size: 3.2vw;
+        padding-bottom: 10px;
+    }
+
+    #times{
+        display: none;
+    }
+
+    #timesDescription {
+        display:inline;
+    }
+
+    table {
+        display: flex;  
+        flex-wrap: nowrap;
+        justify-content: center;
+        border: none;
+    }
+        
+    tr {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    tr.tableDescription {
+        display: none ;
+    }
+        
+    td {
+        white-space:nowrap;
+        height: fit-content;
+        font-size: 2vw;
+    }
+
+    td.lastRow {
+        margin-bottom: 4vw;
+    }
+
+    
+    #changeText {
+        margin-top: 20px;
+        font-size: 6vw;
+    }
+
+    #content{
+        width: fit-content;
+    }
+
+
+    #contentHome{
+        float: none;
+        width: auto;
+        height: 60vw;
+        background-repeat: none;
+        background-size: cover;
+    }
+
+    .columnArrive{
+        margin-top: 20px;
+    }
+
+
+    .extraImage{
+        width: max-content;
+        height: 60vw;
+        width: 100%;
+    }
+
+    .imageColumn{
+        margin: 0px;
+        padding: 0px;
+        width: 80vw;
+    }
+
+    .row{
+        display: block;
+    }
+
+
+    .column{
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .homeTitle {
+        font-size: 5vw;
+    }
+
+
+    a.bigButton {
+        margin-top: 3vw;
+        font-size: 3vw;
+    }
+
+    a.littleButton {
+        margin-top: 3vw;
+        font-size: 2.5vw;
+    }
+
+    h3.info{
+        font-size: 2.6vw;
+    }
+
+    .infoDescription{
+        font-size: 2vw;
+    }
+
+    ul{
+        font-size: 2vw;
+        padding-left: 17px;
+    }
+
+    li {
+        font-size: 2vw;
+    }
+
+    li.indexBlock{
+        font-size: 2vw;
+    }
+
+    li.car {
+        font-size: 2vw;
+    }
+
+    #textarea {
+        width: auto;
+    }
+
+    #disclaimer {
+        position:fixed;
+        height: auto;
+        width: auto;
+        text-align: center;
+        font-size: 1.5vw;
+    }
+
+    #footer {
+       width: auto;
+       height: auto;
+       font-size: 1.5vw;
+    }
+}
+
 @media screen and (max-width: 600px) {
   
 
     h1 {
         margin-top: 200px;
         font-size: 8vw;
+    }
+
+    h1.reservationAccepted {
+        background-color: green;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-size: 4vw;
+    }
+    
+    h1.reservationRefused {
+        background-color: red;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-size: 4vw;
     }
 
     h2.infoTitle{
@@ -407,6 +623,11 @@ a.bigButton {
         display: none;
     }
 
+    #timesDescription {
+        display:inline;
+    }
+
+
     table {
         display: flex;  
         flex-wrap: nowrap;
@@ -416,8 +637,12 @@ a.bigButton {
         
     tr {
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
         border: none;
+    }
+
+    tr.tableDescription {
+        display: none ;
     }
         
     td {
@@ -527,16 +752,20 @@ a.bigButton {
     }
 
     ul{
-        font-size: 2.5vw;
+        font-size: 2.6vw;
         padding-left: 17px;
     }
 
     li {
-        font-size: 3vw;
+        font-size: 2.6vw;
+    }
+
+    li.car {
+        font-size: 2.6vw;
     }
 
     li.indexBlock{
-        font-size: 3vw;
+        font-size: 2.6vw;
     }
 
     #textarea {

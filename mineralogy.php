@@ -11,7 +11,7 @@
             <article id="content"> <h1> Mineralogy Section </h1>
             <h3>In our <i> Mineralogy Section </i> you can find: </h3> <br>';
             echo "<table>";
-            echo "<tr> <td>Name</td> <td>Category</td><td>Color</td><td>Hardness <br> (Mohs Scale)</td><td>Museum Section</td><td class='lastRow'>Image</td></tr>";
+            echo "<tr class='tableDescription'> <td>Name</td> <td>Category</td><td>Color</td><td>Hardness <br> (Mohs Scale)</td><td>Museum Section</td><td class='lastRow'>Image</td></tr>";
             while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
               echo "<tr><td>" . $row['name'] . "</td><td>" . $row['category'] . "</td><td>" . $row['color'] . "</td><td>" . $row['hardness'] . "</td><td>" . $row['museumSection'] . "</td><td class='lastRow'>" . '<img class="tableImage" src="data:image/jpeg;base64,'.base64_encode($row['image']).'"alt="mineral image"/>' . "</td></tr>";
             }
