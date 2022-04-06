@@ -23,13 +23,15 @@
       <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
         <a href="./info.html">Info</a>
-        <a href="./book.html">Book a visit</a>
+        <a href="./book.php">Book a visit</a>
       </div>
     </div>
     <a href="./contact.html">Contact</a>
   </div>
-  <article id="content"> <h1 class="reservationAccepted"> Your contact form has been sent! </h1> </article>
-<footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>';
+  <article id="content"> <h1 class="reservationAccepted"> Your contact form has been sent! </h1>
+      <img src="./logo.svg" alt="logo" style="margin-top: 50px; width:20vw; height:20vw;"> 
+  </article>
+  <footer id="footer" style="margin-top: 500px;"> CNM &copy Copyright 2022 - All rights reserved</footer>';
 
 
     // Create connection

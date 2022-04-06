@@ -5,8 +5,23 @@
         <link rel="stylesheet" type="text/css" href="./book.css">
         <script src="HomePageJS.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./logo.svg">
     </head>
     <body>
+                <!--Script useful to execute query on the DB, delete reservations prior to today's-->
+        <?php
+            $servername = "localhost";
+            $con = mysqli_connect($servername, "root", "root");
+
+            // Check connection
+            if (!$con) { die('Could not connect: ' . mysqli_error($con)); }
+        
+            mysqli_select_db($con,"mydb");
+            $d = date("Y-m-d", strtotime('today'));
+            $sql = "DELETE FROM `reservation` WHERE `dates` < '$d'";
+            if (!mysqli_query($con,$sql)) { die('Error: ' . mysqli_error($con)); }
+            mysqli_close($con);
+        ?>
         <header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
             <article id="content"> <h1>Book a Guided Visit</h1> <br>
                   <form name="reservationForm" action="reservation.php" method="post">
@@ -26,7 +41,7 @@
                       <option value="6">6</option>
                     </select><br><br>
                     <label for="date">Date:</label>
-                    <input type="date" name="date" id="date" min='1899-01-01' max='2000-13-13' onclick="getToday();" required> <br> <br>
+                    <input type="date" name="date" id="date" onclick="getToday();" required> <br> <br>
                     <label for="timeslot">Timeslot:</label>
                     <select name="timeslot" id="timeslot" required>
                       <option value="firstslot" selected>9:00-10:00</option>
@@ -170,6 +185,6 @@
                 </div>
                 <a href="./contact.html">Contact</a>
               </div>
-            <footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>
+              <footer id="footer"> CNM &copy Copyright 2022 - All rights reserved</footer>
     </body>
 </html>

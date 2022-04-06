@@ -1,5 +1,6 @@
 <?php
   echo "<link rel='stylesheet' type='text/css' href='./book.css' />";
+  echo '<link rel="icon" type="image/x-icon" href="./logo.svg">';
   $servername = "localhost";
   $con = mysqli_connect($servername, "root", "root");
   if (!$con) { die('Could not connect: ' . mysqli_error($con)); }
@@ -32,14 +33,14 @@
                 <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
                 <div class="subnav-content">
                   <a href="./info.html">Info</a>
-                  <a href="./book.html">Book a visit</a>
+                  <a href="./book.php">Book a visit</a>
                 </div>
               </div>
               <a href="./contact.html">Contact</a>
             </div>';
 
 
-echo '<footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>';
+echo '<footer id="footer"> CNM &copy Copyright 2022 - All rights reserved</footer>';
 
 
 ?>

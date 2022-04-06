@@ -31,12 +31,14 @@ h1 {
 }
 
 h1.reservationAccepted {
+    margin-top: 200px;
     background-color: green;
     color: white;
     text-shadow: 2px 2px 2px black;
 }
 
 h1.reservationRefused {
+    margin-top: 200px;
     background-color: red;
     color: white;
     text-shadow: 2px 2px 2px black;
@@ -569,6 +571,7 @@ a.bigButton {
        width: auto;
        height: auto;
        font-size: 1.5vw;
+       margin-top: 10%;
     }
 }
 

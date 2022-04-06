@@ -17,7 +17,7 @@
               <br> <br>
               <h2 id="changeText">Botanical Museum</h2>
                 <a class= "bigButton" href="./info.html">Info</a>
-                <a class= "bigButton" href="./book.html" style="background-color:red;">Book a visit</a>
+                <a class= "bigButton" href="./book.php" style="background-color:red;">Book a visit</a>
             </article>
             <article id="content"> <h2 class="homeTitle"> Our Collections</h2>
                 <div class="row">
@@ -73,7 +73,7 @@
                           <li class="indexBlock">Guided Visit (reservation is mandatory)</li> <br>
                         </ul></p>
                       <p class="infoDescription">It is possible to book a guided visit only through the form:</p><br><br><br>
-                      <a class="littleButton" href="./book.html" style="background-color:red;">Book a Guided Visit</a> <br><br><br>
+                      <a class="littleButton" href="./book.php" style="background-color:red;">Book a Guided Visit</a> <br><br><br>
                     </div>
                     <div class="imageColumn" style="margin-left: 0px;">
                       <img class="extraImage" src="./blackFootedFerret.jpeg">
@@ -112,11 +112,12 @@
                   <button class="subnavbtn">Visit</button>
                   <div class="subnav-content">
                     <a href="./info.html">Info</a>
-                    <a href="./book.html">Book a visit</a>
+                    <a href="./book.php">Book a visit</a>
+                    <a href="./reservedArea.php">Reserved Area</a>
                   </div>
                 </div>
                 <a href="./contact.html">Contact</a>
               </div>
-            <footer id="footer"> Mattia Bottini &copy Copyright 2022 - All rights reserved</footer>
+              <footer id="footer"> CNM &copy Copyright 2022 - All rights reserved</footer>
     </body>
 </html>

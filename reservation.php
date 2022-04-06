@@ -24,13 +24,15 @@
       <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
         <a href="./info.html">Info</a>
-        <a href="./book.html">Book a visit</a>
+        <a href="./book.php">Book a visit</a>
       </div>
     </div>
     <a href="./contact.html">Contact</a>
   </div>
-  <article id="content"> <h1 class="reservationAccepted"> Your reservation has been accepted!</h1> </article>
-<footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>';
+  <article id="content"> <h1 class="reservationAccepted"> Your reservation has been accepted!</h1> 
+  <img src="./logo.svg" alt="logo" style="margin-top: 50px; width:20vw; height:20vw;"> 
+  </article>
+  <footer id="footer" style="margin-top: 50%; margin-bottom: 0px;"> Mattia Bottini &copy Copyright 2022 - All rights reserved</footer>';
 
 $htmlNotAccepted='<header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
 <div class="navbar">
@@ -48,13 +50,41 @@ $htmlNotAccepted='<header id="header"><br> <img class = "headerImage" src="./log
   <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
   <div class="subnav-content">
     <a href="./info.html">Info</a>
-    <a href="./book.html">Book a visit</a>
+    <a href="./book.php">Book a visit</a>
   </div>
 </div>
 <a href="./contact.html">Contact</a>
 </div>
-<article id="content"> <h1 class="reservationRefused"> Your reservation can not be accepted: NO AVAILABLE SEATS</h1> </article>
-<footer id="footer"> &copy Copyright 2022 - Mattia Bottini </footer>';
+<article id="content"> <h1 class="reservationRefused"> Your reservation can not be accepted: <br>NO AVAILABLE SEATS</h1> 
+  <img src="./logo.svg" alt="logo" style="margin-top: 50px; width:20vw; height:20vw;"> 
+</article>
+<footer id="footer" style="margin-top: 50%; margin-bottom: 0px;"> Mattia Bottini &copy Copyright 2022 - All rights reserved</footer>';
+
+$emailAlreadyUsed='<header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
+<div class="navbar">
+<a href="./index.php">Home</a>
+<div class="subnav">
+  <button class="subnavbtn">Collections <i class="fa fa-caret-down"></i></button>
+  <div class="subnav-content">
+    <a href="./botany.html">Botany</a>
+    <a href="./zoology.html">Zoology</a>
+    <a href="./mineralogy.html">Mineralogy</a>
+    <a href="./archeology.html">Archeology</a>
+  </div>
+</div>
+<div class="subnav">
+  <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
+  <div class="subnav-content">
+    <a href="./info.html">Info</a>
+    <a href="./book.php">Book a visit</a>
+  </div>
+</div>
+<a href="./contact.html">Contact</a>
+</div>
+<article id="content"> <h1 class="reservationRefused"> Your reservation can not be accepted: <br>EMAIL USED IN ANOTHER RESERVATION!</h1> 
+  <img src="./logo.svg" alt="logo" style="margin-top: 50px; width:20vw; height:20vw;"> 
+</article>
+<footer id="footer" style="margin-top: 50%; margin-bottom: 0px;"> Mattia Bottini &copy Copyright 2022 - All rights reserved</footer>';
 
 
     // Create connection
@@ -77,7 +107,7 @@ $htmlNotAccepted='<header id="header"><br> <img class = "headerImage" src="./log
         mysqli_select_db($con,"mydb");
         $sql2= "INSERT INTO reservation (firstName, familyName, email, numbers, dates, timeslot) VALUES ('$firstName', '$familyName', '$email', '$numbers', '$dates', '$timeslot')";
         if (!mysqli_query($con,$sql2))
-            { die('Error: ' . mysqli_error($con)); }
+            { die($emailAlreadyUsed); }
         mysqli_close($con);
         mysqli_select_db($con2,"mydb");
         $sql="UPDATE availabilityNumbers SET firstslot=firstslot-$numbers where dates='$dates'";
@@ -101,7 +131,7 @@ $htmlNotAccepted='<header id="header"><br> <img class = "headerImage" src="./log
         mysqli_select_db($con,"mydb");
         $sql2= "INSERT INTO reservation (firstName, familyName, email, numbers, dates, timeslot) VALUES ('$firstName', '$familyName', '$email', '$numbers', '$dates', '$timeslot')";
         if (!mysqli_query($con,$sql2))
-            { die('Error: ' . mysqli_error($con)); }
+            { die($emailAlreadyUsed); }
         mysqli_close($con);
         mysqli_select_db($con2,"mydb");
         $sql="UPDATE availabilityNumbers SET secondslot=secondslot-$numbers where dates='$dates'";
@@ -125,7 +155,7 @@ $htmlNotAccepted='<header id="header"><br> <img class = "headerImage" src="./log
         mysqli_select_db($con,"mydb");
         $sql2= "INSERT INTO reservation (firstName, familyName, email, numbers, dates, timeslot) VALUES ('$firstName', '$familyName', '$email', '$numbers', '$dates', '$timeslot')";
         if (!mysqli_query($con,$sql2))
-            { die('Error: ' . mysqli_error($con)); }
+            { die($emailAlreadyUsed); }
         mysqli_close($con);
         mysqli_select_db($con2,"mydb");
         $sql="UPDATE availabilityNumbers SET thirdslot=thirdslot-$numbers where dates='$dates'";
@@ -149,7 +179,7 @@ $htmlNotAccepted='<header id="header"><br> <img class = "headerImage" src="./log
         mysqli_select_db($con,"mydb");
         $sql2= "INSERT INTO reservation (firstName, familyName, email, numbers, dates, timeslot) VALUES ('$firstName', '$familyName', '$email', '$numbers', '$dates', '$timeslot')";
         if (!mysqli_query($con,$sql2))
-            { die('Error: ' . mysqli_error($con)); }
+            { die($emailAlreadyUsed); }
         mysqli_close($con);
         mysqli_select_db($con2,"mydb");
         $sql="UPDATE availabilityNumbers SET fourthslot=fourthslot-$numbers where dates='$dates'";
