@@ -1,60 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
       <meta charset="UTF-8">
         <title> Info </title>
-        <link rel="stylesheet" type="text/css" href="./book.css">
-        <script src="HomePageJS.js"></script>
+        <link rel="stylesheet" type="text/css" href="./mycss.css">
+        <script src="myJS.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="./logo.svg">
+        <link rel="icon" type="image/x-icon" href="logos/logo.svg">
     </head>
     <body>
-            <header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
-            <article id="content"> <h1> General Information </h1> <br><h2 class="infoTitle">Visit the Museum</h2>           
+            <header id="header"><br> <img class = "headerImage" src="logos/logo.svg" alt="CNM Logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
+            <article class="content"> <h1> General Information </h1> <br><h2 class="infoTitle">Visit the Museum</h2>           
             </article> 
-            <article id="content"> 
+            <article class="content"> 
                 <div class="row">
                     <div class="column">
                       <h3 class="info">Basic Visit</h3>
-                      <p class="infoDescription">The basic visit to the museum is completely free, a reservation is not necessary.<br><br>Cost: <br><br> Adults: 10$ <br> Children (maximum 14 years old): 5$</p> <br> 
-                      <p class="infoDescription">To cancel a reservation or further information:</p><br><br>
-                      <a class="littleButton" href="./contact.html">Contact Us</a>
+                      <p class="infoDescription">The basic visit to the museum is completely free, a reservation is not necessary.<br><br> Adults: 10$ <br><br>Children (maximum 14 years old): 5$</p> <br> 
+                      <p class="infoDescription">To cancel a reservation or further information:</p><br><br><br>
+                      <a class="littleButton blueBackground" href="./contact.html">Contact Us</a> <br><br>
                     </div>
                     <div class="column">
                       <h3 class="info">Guided Visit</h3>
                       <p class="infoDescription">The guided visit to the museum (only morning) costs: <br><br> 20$/person (no age distinction). <br><br>The reservation is mandatory.</p> <br>
                       <p class="infoDescription">It is possible to book a guided visit only through the form:</p><br><br><br>
-                      <a class="littleButton" href="./book.php" style="background-color: red;">Book a Guided Visit</a>
+                      <a class="littleButton redBackground" href="./book.php">Book a Guided Visit</a><br><br>
                     </div>
                   </div>
             </article> <br><br>
-            <article id="content"><h2 class="infoTitle">How to arrive</h2> <br> <br>
+            <article class="content"><h2 class="infoTitle">How to arrive</h2> <br> <br>
                 <div class="row">
                     <div class="columnArrive">
-                      <img src="train.png" width="30px" height="40spx" style="padding-top: 1em;"><h3 class="info">By Train</h3>
-                      <p class="infoDescription"> 
+                      <img src="logos/train.png" class="logo" alt="Train Logo"><h3 class="info">By Train</h3>
                       <ol>
-                        <li>Arrive at Union Station of Denver (CO)</li> <br>
-                        <li>Take the free couch called "<i><b>STATION-MUSEUM BUS</b></i> "</li> <br>
-                        <li>Walk for 300 ft to reach the entrance of the museum</li> <br>
+                        <li>Arrive at Union Station of Denver (CO)</li>
+                        <li>Take the free couch called <em>STATION-MUSEUM BUS</em></li>
+                        <li>Walk for 300 ft to reach the entrance of the museum</li>
                       </ol>
-                      </p>
                     </div>
                     <div class="columnArrive">
-                      <img src="aereo.png" width="30px" height="40px" style="padding-top: 1em;"><h3 class="info">By Plane</h3>
-                      <p class="infoDescription"><ol>
-                        <li>Arrive at Denver International Airport (CO)</li> <br>
-                        <li>Take the free couch called "<i><b>AIRPORT-MUSEUM BUS </b></i>"</li> <br>
-                        <li>Walk for 100 ft to reach the entrance of the museum</li> <br>
-                      </ol></p>
+                      <img src="logos/aereo.png" class="logo" alt="Plane Logo"><h3 class="info">By Plane</h3>
+                      <ol>
+                        <li>Arrive at Denver International Airport (CO)</li>
+                        <li>Take the free couch called <em>AIRPORT-MUSEUM BUS</em></li>
+                        <li>Walk for 100 ft to reach the entrance of the museum</li>
+                      </ol>
                     </div>
                     <div class="columnArrive">
-                      <img src="car.png" width="35px" height="40px" style="padding-top: 1em;"><h3 class="info">By Car</h3>
-                        <p class="infoDescription"><ul style="margin: 0px;">
-                          <li class="car">From North: travel along the <i>route #62</i> and then <i>exit #43</i> </li> <br>
-                          <li class="car">From South: travel along the <i>highway #75</i> and then <i>exit #34</i> </li> <br>
-                          <li class="car">From East: travel along the <i>motorway #32</i> and then <i>exit #33</i> </li> <br>
-                          <li class="car">From West: travel along the <i>freeway #22</i> and then <i>exit #5</i> </li> <br>
-                        </ul></p>
+                      <img src="logos/car.png" class="logo" alt="Car Logo"><h3 class="info">By Car</h3>
+                        <ul>
+                          <li class="car">From North: travel along the <em>route #62</em> and then <em>exit #43</em> </li>
+                          <li class="car">From South: travel along the <em>highway #75</em> and then <em>exit #34</em> </li>
+                          <li class="car">From East: travel along the <em>motorway #32</em> and then <em>exit #33</em> </li>
+                          <li class="car">From West: travel along the <em>freeway #22</em> and then <em>exit #5</em> </li>
+                        </ul>
                       </div>
                   </div>           
             </article> 
@@ -77,6 +76,6 @@
                 </div>
                 <a href="./contact.html">Contact</a>
               </div>
-              <footer id="footer"> CNM &copy Copyright 2022 - All rights reserved</footer>
+              <footer id="footer"> CNM &copy; Copyright 2022 - All rights reserved</footer>
     </body>
 </html>

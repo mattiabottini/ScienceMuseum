@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title> Book a Visit </title>
-        <link rel="stylesheet" type="text/css" href="./book.css">
-        <script src="HomePageJS.js"></script>
+        <link rel="stylesheet" type="text/css" href="./mycss.css">
+        <script src="myJS.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="./logo.svg">
+        <link rel="icon" type="image/x-icon" href="logos/logo.svg">
     </head>
     <body>
                 <!--Script useful to execute query on the DB, delete reservations prior to today's-->
@@ -22,8 +22,8 @@
             if (!mysqli_query($con,$sql)) { die('Error: ' . mysqli_error($con)); }
             mysqli_close($con);
         ?>
-        <header id="header"><br> <img class = "headerImage" src="./logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
-            <article id="content"> <h1>Book a Guided Visit</h1> <br>
+        <header id="header"><br> <img class = "headerImage" src="logos/logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
+            <article class="content"> <h1>Book a Guided Visit</h1> <br>
                   <form name="reservationForm" action="reservation.php" method="post">
                     <label for="firstName">First Name:</label> 
                     <input type="text" name="firstName" id="firstName" required> <br><br>
@@ -53,116 +53,115 @@
                     <input type="reset" name="reset" id="reset" value="Reset"> <br><br>
                   </form>
                   <br> <hr> <br> <br>
-                  <article id="timesDescription"><p class="infoDescription"> 
+                  <article id="timesDescription">
                     <ul>
-                      <li><p style="color: blue;">OPEN (GUIDED visits)</p> every day at morning for guided visits: <br>9-10 (1^slot), 10-11 (2^slot), 11-12 (3^slot), 12-13 (4^slot)</li> <br>
-                      <li>Tuesday, Friday afternoon :   <p style="color: red;">CLOSED</p>(15:00-18:00)</li> <br>
-                      <li>Monday, Wednesday, Thursday, Saturday, Sunday afternoon :<br><p style="color: blue;">OPEN (ONLY BASIC visits)</p>(15:00-18:00)</li> <br>
+                      <li><p class="blueText">OPEN (GUIDED visits)</p> every day at morning for guided visits: <br>9-10 (1^slot), 10-11 (2^slot), 11-12 (3^slot), 12-13 (4^slot)</li>
+                      <li>Tuesday, Friday afternoon :   <p class="redText">CLOSED</p>(15:00-18:00)</li>
+                      <li>Monday, Wednesday, Thursday, Saturday, Sunday afternoon :<br><p class="blueText">OPEN (ONLY BASIC visits)</p>(15:00-18:00)</li>
                     </ul>
-                    </p>
                    </article> 
-                  <table id="times" cellpadding="5">
+                  <table id="times">
                     <tr>
                         <td>
-                            <b>Day/Period</b></br>
+                            Day/Period<br>
                         </td>
                         <td>
-                            <b>9:00-10:00</b><br>
-                            <b>1^slot</b>
+                            9:00-10:00<br>
+                            1^slot
                         </td>
                         <td>
-                            <b>10:00-11:00</b><br>
-                            <b>2^slot</b>
+                            10:00-11:00<br>
+                            2^slot
                         </td>
-                        <td  >
-                          <b>11:00-12:00</b><br>
-                          <b>3^slot</b>
+                        <td>
+                          11:00-12:00<br>
+                          3^slot
                         </td> 
-                        <td   >
-                            <b>12:00-13:00</b><br>
-                            <b>4^slot</b>
+                        <td>
+                            12:00-13:00<br>
+                            4^slot
                         </td>
                         <td  >
-                            <b>13:00-14:00</b>
-                        </td>
-                        <td  >
-                            <b>15:00-16:00</b>
+                            13:00-14:00
                         </td>
                         <td>
-                            <b>17:00-18:00</b>
+                            15:00-16:00
+                        </td>
+                        <td>
+                            17:00-18:00
                         </td>
                     </tr>
                     <tr>
-                        <td  >
-                            <b>Monday</b></td>
-                            <td class="guided"><b>OPEN (Guided Visit)</td>
-                            <td class="guided"><b>OPEN (Guided Visit)</td>
-                            <td class="guided"><b>OPEN (Guided Visit)</td>
-                            <td class="guided"><b>OPEN (Guided Visit)</td>
+                        <td>
+                            Monday</td>
+                            <td class="guided">OPEN (Guided Visit)</td>
+                            <td class="guided">OPEN (Guided Visit)</td>
+                            <td class="guided">OPEN (Guided Visit)</td>
+                            <td class="guided">OPEN (Guided Visit)</td>
                         <td rowspan="7" >
                             <h3>L<br>U<br>N<br>C<br>H<br><br>B<br>R<br>E<br>A<br>K</h3>
                         </td>
-                        <td colspan="2" class= "open"><b>OPEN</b></td>
+                        <td colspan="2" class= "open">OPEN</td>
                     </tr>
                     <tr>
                         <td  >
-                            <b>Tuesday</b>
+                            Tuesday
                         </td>
-                        <td class="guided" ><b>OPEN (Guided Visit)</td>
-                          <td class="guided" ><b>OPEN (Guided Visit)</td>
-                          <td class="guided" ><b>OPEN (Guided Visit)</td>
-                          <td class="guided" ><b>OPEN (Guided Visit)</td>
-                        <td colspan="2" class="closed" ><b>CLOSED</b></td>
+                        <td class="guided" >OPEN (Guided Visit)</td>
+                          <td class="guided" >OPEN (Guided Visit)</td>
+                          <td class="guided" >OPEN (Guided Visit)</td>
+                          <td class="guided" >OPEN (Guided Visit)</td>
+                        <td colspan="2" class="closed">CLOSED</td>
                     </tr>
                     <tr>
                         <td  >
-                            <b>Wednesday</b>
+                            Wednesday
                         </td>
-                            <td class="guided" ><b>OPEN (Guided Visit)</td>
-                            <td class="guided" ><b>OPEN (Guided Visit)</td>
-                            <td class="guided" ><b>OPEN (Guided Visit)</td>
-                            <td class="guided" ><b>OPEN (Guided Visit)</td>
-                            <td colspan="2" class= "open"><b>OPEN</b></td>
+                            <td class="guided" >OPEN (Guided Visit)</td>
+                            <td class="guided" >OPEN (Guided Visit)</td>
+                            <td class="guided" >OPEN (Guided Visit)</td>
+                            <td class="guided" >OPEN (Guided Visit)</td>
+                            <td colspan="2" class= "open">OPEN</td>
                     </tr>
                     <tr>
                         <td  >
-                            <b>Thursday</b>
+                            Thursday
                         </td>
-                        <td class="guided" ><b>OPEN (Guided Visit)</td>
-                        <td class="guided" ><b>OPEN (Guided Visit)</td>
-                        <td class="guided" ><b>OPEN (Guided Visit)</td>
-                        <td class="guided" ><b>OPEN (Guided Visit)</td>
-                        <td colspan="2" class= "open"><b>OPEN</b></td>
+                        <td class="guided" >OPEN (Guided Visit)</td>
+                        <td class="guided" >OPEN (Guided Visit)</td>
+                        <td class="guided" >OPEN (Guided Visit)</td>
+                        <td class="guided" >OPEN (Guided Visit)</td>
+                        <td colspan="2" class= "open">OPEN</td>
                     </tr>
                     <tr>
                         <td  >
-                            <b>Friday</b>
+                            Friday
                         </td>
-                        <td class="guided" ><b>OPEN (Guided Visit)</td>
-                        <td class="guided" ><b>OPEN (Guided Visit)</td>
-                        <td class="guided" ><b>OPEN (Guided Visit)</td>
-                        <td class="guided" ><b>OPEN (Guided Visit)</td>
-                        <td colspan="2" class= "closed"><b>CLOSED</b></td>
+                        <td class="guided" >OPEN (Guided Visit)</td>
+                        <td class="guided" >OPEN (Guided Visit)</td>
+                        <td class="guided" >OPEN (Guided Visit)</td>
+                        <td class="guided" >OPEN (Guided Visit)</td>
+                        <td colspan="2" class= "closed">CLOSED</td>
                     </tr>
                     <tr>
                         <td  >
-                            <b>Saturday</b>
+                            Saturday
                         </td>
-                        <td class="guided" ><b>OPEN (Guided Visit)</td>
-                        <td class="guided" ><b>OPEN (Guided Visit)</td>
-                        <td class="guided" ><b>OPEN (Guided Visit)</td>
-                        <td class="guided" ><b>OPEN (Guided Visit)</td>
-                        <td colspan="2" class= "open"><b>OPEN</b></td>
+                        <td class="guided" >OPEN (Guided Visit)</td>
+                        <td class="guided" >OPEN (Guided Visit)</td>
+                        <td class="guided" >OPEN (Guided Visit)</td>
+                        <td class="guided" >OPEN (Guided Visit)</td>
+                        <td colspan="2" class= "open">OPEN</td>
                     </tr>
                     <tr>
                       <td  >
-                          <b>Sunday</b>
+                          Sunday
                       </td>
-                      <td class="guided" ><b>OPEN (Guided Visit)</td>
-                      <td class="guided" ><b>OPEN (Guided Visit)</td>
-                      <td class="guided" ><b>OPEN (Guided Visit)</td>
-                      <td class="guided" ><b>OPEN (Guided Visit)</td>
-                      <td colspan="2" class= "open"><b>OPEN</b></td>
+                      <td class="guided" >OPEN (Guided Visit)</td>
+                      <td class="guided" >OPEN (Guided Visit)</td>
+                      <td class="guided" >OPEN (Guided Visit)</td>
+                      <td class="guided" >OPEN (Guided Visit)</td>
+                      <td colspan="2" class= "open">OPEN</td>
                   </tr>
                 </table> 
             </article>
@@ -180,11 +179,11 @@
                   <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
                   <div class="subnav-content">
                     <a href="./info.html">Info</a>
-                    <a href="./book.html">Book a visit</a>
+                    <a href="./book.php">Book a visit</a>
                   </div>
                 </div>
                 <a href="./contact.html">Contact</a>
               </div>
-              <footer id="footer"> CNM &copy Copyright 2022 - All rights reserved</footer>
+              <footer id="footer"> CNM &copy; Copyright 2022 - All rights reserved</footer>
     </body>
 </html>

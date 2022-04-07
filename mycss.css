@@ -1,0 +1,848 @@
+body {
+    margin:0px;
+    padding: 0px; font-size: 85%;
+    color: black;
+    background-image: radial-gradient(white, lightgreen);
+    font-family: 'marker';
+    text-align: center;
+    }
+
+@font-face {
+        font-family: 'marker';
+        src: url('./Righteous-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+
+h1 {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    text-align: center;
+    background-color: pink;
+    color: black;
+    border: solid black ;
+    border-radius: 10px;
+    width: fit-content;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h1.reservationAccepted {
+    margin-top: 200px;
+    background-color: green;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+h1.reservationRefused {
+    margin-top: 200px;
+    background-color: red;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+
+.homeTitle {
+    font-size: 48px;
+}
+
+#changeText {
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    background-color: lightblue;
+    border: dotted 8px black;
+    font-size: 80px;
+    font-weight: normal;
+}
+
+h3.info {
+    font-size: 24px;
+    color: purple;
+}
+
+.infoTitle {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+    padding: 5px;
+    border: solid black;
+    font-size: 35px;
+    width: fit-content;
+    font-weight: normal;
+}
+
+.infoDescription {
+    color: black;
+    font-size: 17px;
+}
+
+ul{
+    font-size: 17px;
+}
+
+li{
+    font-size: 15px;
+    padding: 5px;
+    padding-bottom: 19px ;
+}
+
+li.car {
+    font-size: 13px;
+}
+
+li.indexBlock{
+    font-size: 17px; width:fit-content; margin:auto;
+    padding-bottom: 19px ;
+}
+
+
+.row {
+    display: flex;
+  }
+
+
+.imageColumn{
+    flex: 50%;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    border:none;
+    box-shadow: 0 0 5px 2px #282a2d;
+}
+  
+.column {
+    flex: 50%;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    border:none;
+    box-shadow: 0 0 5px 2px #282a2d;
+}
+
+.extraImage{
+    width: 100%;
+    height: 100%;
+}
+
+.columnArrive {
+    margin: 10px;
+    border:none;
+    box-shadow: 0 0 5px 2px #282a2d;
+    flex: 33.3%;
+    padding: 1em;
+}
+
+.logo {
+    width:30px;
+    height:40px;
+    padding-top: 1em;
+}
+
+.bigLogo {
+    margin-top: 50px; 
+    width:20vw; 
+    height:20vw;
+}
+
+p {
+    display:inline-block; 
+    margin-right: 5px;
+}
+
+.blueText {
+    color: blue;
+}
+
+.redText {
+    color: red;
+}
+
+#header {
+    height: 80px;
+    background-color: rgb(196, 164, 132);
+}
+
+a.header {
+    text-decoration: none;
+    font-size: 40px;
+    color: #eee;
+    text-shadow: 2px 2px 2px black;
+    vertical-align:middle;
+    font-weight: bold;
+}
+
+.headerImage {
+    width: 100px;
+    height:50px;
+    vertical-align:middle;
+}
+
+.tableImage {
+    width: 120px;
+    height: 100px;
+}
+
+
+
+#times {
+    margin:auto; width: auto; height: auto;
+}
+
+#timesDescription {
+    display: none;
+}
+
+td {
+    text-align: center;
+    height: 50px;
+    background-color: white;
+    border: solid black;
+    width: auto;
+    padding: 5px;
+    font-size: 17px;
+}
+
+table {
+    border: 2px solid black;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr {
+    border: 2px solid black;
+}
+
+.guided {
+    color: rgb(60, 179, 113);
+}
+
+.closed {
+    color: red;
+}
+
+.open {
+    color: green;
+}
+
+.content {
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contentHome {
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height:50vw;
+    text-align: center;
+    background-image: url("Images/trees.jpg");
+    background-repeat: no-repeat ;
+    box-shadow: 0 0 5px 2px #282a2d;
+    line-height: 1.4;
+    background-size: 100%;
+}
+
+
+.contentCollection {
+    margin-top: 30px;
+    padding: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.contentInfo {
+    height:auto;
+    text-align: center;
+}
+
+
+a:hover{
+    filter: brightness(85%);
+}
+
+
+a.littleButton {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    border: solid black;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.redBackground{
+    background-color: red;
+}
+
+.blueBackground {
+    background-color: royalblue;
+}
+
+.greenBackground {
+    background-color: green;
+}
+
+.blueVioletBackground{
+    background-color: blueviolet;
+}
+
+.orangeBackground{
+    background-color: orange;
+}
+
+.leftColumn {
+    margin-right: 0px;
+}
+
+.rightColumn {
+    margin-left: 0px;
+}
+
+a.bigButton {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: none;
+    border: solid black;
+    margin: 5px;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+
+.navbar {
+    position: absolute;
+    text-align: center;
+    top: 80px; left: 0px;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    overflow: visible;
+}
+
+.navbar a{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    display: inline-block;
+    overflow: visible;
+}
+
+.subnav .subnavbtn {
+    font-size: 20px;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(196, 164, 132);
+    color: black;
+    border: solid black 1px;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(196, 164, 132);
+    width: auto;
+    z-index: 1;
+    border: solid black 1px;
+
+}
+
+.subnav-content a {
+    color: black;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+    background-size: 100% ;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+
+#textarea {
+    width: 400px;
+    height: 100px;
+}
+
+#disclaimer {
+    margin-top: 50px;
+    position:fixed;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    border-top: 2px solid #ff5c62;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 5px 10px 5px 10px;
+}
+
+#close {
+    background-color: white;
+    color: red;
+}
+
+#footer {
+    height: 20px;
+    background-color: black;
+    color: white;
+    border-bottom: solid white 1px;
+    text-align: center;
+    font-size: 85%;
+    padding-top: 0.4em;
+    padding-right: 1em;
+}
+
+.bookFooter {
+    margin-top: 200px;
+}
+
+
+@media screen and (max-width: 1260px) and (min-width: 601px) {
+  
+
+    h1 {
+        margin-top: 80px;
+        font-size: 4vw;
+    }
+
+    h1.reservationAccepted {
+        background-color: green;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-size: 3.2vw;
+    }
+    
+    h1.reservationRefused {
+        background-color: red;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-size: 3.2vw;
+    }
+
+    h2.infoTitle{
+        font-size: 3vw;
+    }
+
+    h3{
+        font-size: 2vw;
+    }
+
+    #header{
+        width: 100%;
+    }
+
+    a.header {
+        width: 100%;
+        font-size: 3.2vw;
+        padding-bottom: 10px;
+    }
+
+    #times{
+        display: none;
+    }
+
+    #timesDescription {
+        display:inline;
+    }
+
+    table {
+        display: flex;  
+        flex-wrap: nowrap;
+        justify-content: center;
+        border: none;
+    }
+        
+    tr {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    tr.tableDescription {
+        display: none ;
+    }
+        
+    td {
+        white-space:nowrap;
+        height: fit-content;
+        font-size: 2vw;
+    }
+
+    td.lastRow {
+        margin-bottom: 4vw;
+    }
+
+    
+    #changeText {
+        margin-top: 20px;
+        font-size: 6vw;
+    }
+
+    .content{
+        width: fit-content;
+    }
+
+
+    #contentHome{
+        float: none;
+        width: auto;
+        height: 60vw;
+        background-size: cover;
+    }
+
+    .columnArrive{
+        margin-top: 20px;
+    }
+
+
+    .extraImage{
+        width: 100%;
+    }
+
+    .bigLogo {
+        margin-bottom: 160px;
+    }
+
+    .imageColumn{
+        margin: 0px;
+        padding: 0px;
+        width: 80vw;
+        height: 60vw;
+    }
+
+    .row{
+        display: block;
+    }
+
+
+    .column{
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .homeTitle {
+        font-size: 5vw;
+    }
+
+
+    a.bigButton {
+        margin-top: 3vw;
+        font-size: 3vw;
+    }
+
+    a.littleButton {
+        margin-top: 3vw;
+        font-size: 2.5vw;
+    }
+
+    h3.info{
+        font-size: 2.6vw;
+    }
+
+    .infoDescription{
+        font-size: 2vw;
+    }
+
+    ul{
+        font-size: 2vw;
+        padding-left: 17px;
+    }
+
+    li {
+        font-size: 2vw;
+    }
+
+    li.indexBlock{
+        font-size: 2vw;
+    }
+
+    li.car {
+        font-size: 2vw;
+    }
+
+    #textarea {
+        width: auto;
+    }
+
+    #disclaimer {
+        position:fixed;
+        height: auto;
+        width: auto;
+        text-align: center;
+        font-size: 1.5vw;
+    }
+
+    #footer {
+       width: auto;
+       height: auto;
+       font-size: 1.5vw;
+       margin-top: 10%;
+    }
+
+    .bookFooter {
+        margin-top: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  
+
+    h1 {
+        margin-top: 200px;
+        font-size: 8vw;
+    }
+
+    h1.reservationAccepted {
+        background-color: green;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-size: 4vw;
+    }
+    
+    h1.reservationRefused {
+        background-color: red;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-size: 4vw;
+    }
+
+    h2.infoTitle{
+        font-size: 6vw;
+    }
+
+    h3{
+        font-size: 2.8vw;
+    }
+
+
+
+    #header{
+        width: 100%;
+    }
+
+    a.header {
+        width: 100%;
+        font-size: 4vw;
+    }
+    
+    .headerImage {
+        width: 12vw;
+        height: 9vw;
+        vertical-align:middle;
+    }
+
+    #times{
+        display: none;
+    }
+
+    #timesDescription {
+        display:inline;
+    }
+
+
+    table {
+        display: flex;  
+        flex-wrap: nowrap;
+        justify-content: center;
+        border: none;
+    }
+        
+    tr {
+        display: flex;
+        flex-direction:column;
+        border: none;
+    }
+
+    tr.tableDescription {
+        display: none ;
+    }
+        
+    td {
+        white-space:nowrap;
+        height: fit-content;
+        font-size: 3vw;
+    }
+
+    td.lastRow {
+        margin-bottom: 4vw;
+    }
+    
+    .navbar a {
+      font-size: 1em;
+      width: 99.5%;
+      height: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .subnavbtn{
+        font-size: 1em;
+        float: none;
+        width: 100%;
+    }
+
+    .subnav {
+        font-size: 1em;
+        float: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .subnav .subnavbtn {
+        float: none;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .subnav-content {
+        display: none;
+        position: absolute;
+        text-align: center;
+        width: auto;
+    }
+
+    #changeText {
+        margin-top: 20px;
+        font-size: 6vw;
+    }
+
+    #contentHome{
+        margin-top: 200px;
+        float: none;
+        width: auto;
+        height: 60vw;
+        background-size: cover;
+    }
+
+    .columnArrive{
+        margin-top: 20px;
+    }
+
+    .row{
+        display: block;
+    }
+
+    .extraImage{
+        width: max-content;
+        height: 60vw;
+        width: 100%;
+    }
+
+
+    .imageColumn{
+        margin: 0px;
+        padding: 0px;
+        height: 60vw;
+    }
+
+    .column{
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .homeTitle {
+        font-size: 5vw;
+    }
+
+
+    a.bigButton {
+        margin-top: 4vw;
+        font-size: 4vw;
+    }
+
+    a.littleButton {
+        margin-top: 4vw;
+        font-size: 3.5vw;
+    }
+
+    h3.info{
+        font-size: 4vw;
+    }
+
+    .infoDescription{
+        font-size: 3vw;
+    }
+
+    ul{
+        font-size: 2.6vw;
+        padding-left: 17px;
+    }
+
+    li {
+        font-size: 3vw;
+    }
+
+    li.car {
+        font-size: 2.6vw;
+    }
+
+    li.indexBlock{
+        font-size: 3vw;
+    }
+
+    #textarea {
+        width: auto;
+    }
+
+    #disclaimer {
+        position:fixed;
+        height: auto;
+        width: auto;
+        font-size: 2.3vw;
+    }
+
+    #footer {
+       width: auto;
+       font-size: 2vw;
+       margin-top: 10%;
+    }
+
+    .bigLogo {
+        margin-bottom: 180px;
+    }
+
+    .bookFooter {
+        margin-top: 80%;
+    }
+}
