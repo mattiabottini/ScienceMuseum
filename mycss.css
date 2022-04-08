@@ -7,11 +7,16 @@ body {
     text-align: center;
     }
 
+
 @font-face {
         font-family: 'marker';
         src: url('./Righteous-Regular.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
+}
+
+#skip {
+    display: none;
 }
 
 
@@ -61,10 +66,7 @@ h1.reservationRefused {
     font-weight: normal;
 }
 
-h3.info {
-    font-size: 24px;
-    color: purple;
-}
+
 
 .infoTitle {
     margin-top: 5px;
@@ -79,6 +81,11 @@ h3.info {
     font-size: 35px;
     width: fit-content;
     font-weight: normal;
+}
+
+h3.info {
+    font-size: 24px;
+    color: purple;
 }
 
 .infoDescription {
@@ -204,6 +211,13 @@ a.header {
     display: none;
 }
 
+table {
+    border: 2px solid black;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 td {
     text-align: center;
     height: 50px;
@@ -214,12 +228,6 @@ td {
     font-size: 17px;
 }
 
-table {
-    border: 2px solid black;
-    font-size: 1em;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 tr {
     border: 2px solid black;
@@ -254,20 +262,6 @@ tr {
     box-shadow: 0 0 5px 2px #282a2d;
     line-height: 1.4;
     background-size: 100%;
-}
-
-
-.contentCollection {
-    margin-top: 30px;
-    padding: 1em;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-}
-
-.contentInfo {
-    height:auto;
-    text-align: center;
 }
 
 
@@ -420,6 +414,7 @@ a.bigButton {
 #close {
     background-color: white;
     color: red;
+    width: auto;
 }
 
 #footer {
@@ -460,7 +455,7 @@ a.bigButton {
         font-size: 3.2vw;
     }
 
-    h2.infoTitle{
+    .infoTitle{
         font-size: 3vw;
     }
 
@@ -615,7 +610,6 @@ a.bigButton {
 
     #footer {
        width: auto;
-       height: auto;
        font-size: 1.5vw;
        margin-top: 10%;
     }
@@ -647,7 +641,7 @@ a.bigButton {
         font-size: 4vw;
     }
 
-    h2.infoTitle{
+    .infoTitle{
         font-size: 6vw;
     }
 
@@ -744,7 +738,8 @@ a.bigButton {
 
     #changeText {
         margin-top: 20px;
-        font-size: 6vw;
+        font-size: 5.2vw;
+        width: auto;
     }
 
     #contentHome{
@@ -810,7 +805,7 @@ a.bigButton {
     }
 
     li {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     li.car {
@@ -836,6 +831,10 @@ a.bigButton {
        width: auto;
        font-size: 2vw;
        margin-top: 10%;
+    }
+
+    input{
+        width: 25vw;
     }
 
     .bigLogo {

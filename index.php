@@ -10,10 +10,26 @@
     </head>
     <body>
             <header id="header"><br> <img class = "headerImage" src="logos/logo.svg" alt="CNM Logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
-            <div id="disclaimer" > 
-            <input type="button" name="close" id="close" value="X" onclick="closeDisclaimer();">
-               <p class="redText">ATTENTION!</p> In our museum wearing the mask is mandatory in order to prevent the spread of disease and viruses especially during the Coronavirus (COVID-19) pandemic 
-              </div> 
+            <div class="navbar">
+                <a href="./index.php">Home</a>
+                <div class="subnav">
+                  <button class="subnavbtn">Collections</button>
+                  <div class="subnav-content">
+                    <a href="./botany.php">Botany</a>
+                    <a href="./zoology.php">Zoology</a>
+                    <a href="./mineralogy.php">Mineralogy</a>
+                  </div>
+                </div>
+                <div class="subnav">
+                  <button class="subnavbtn">Visit</button>
+                  <div class="subnav-content">
+                    <a href="./info.html">Info</a>
+                    <a href="./book.php">Book a visit</a>
+                  </div>
+                </div>
+                <a href="./contact.html">Contact</a>
+              </div>
+              <div id="skip"><a href="#contentHome">Skip to main content</a></div>
             <article id="contentHome"> 
               <br> <br>
               <h2 id="changeText">Botanical Museum</h2>
@@ -99,25 +115,10 @@
                     </div>
                   </div>
             </article> <br><br>
-            <div class="navbar">
-                <a href="./index.php">Home</a>
-                <div class="subnav">
-                  <button class="subnavbtn">Collections</button>
-                  <div class="subnav-content">
-                    <a href="./botany.php">Botany</a>
-                    <a href="./zoology.php">Zoology</a>
-                    <a href="./mineralogy.php">Mineralogy</a>
-                  </div>
-                </div>
-                <div class="subnav">
-                  <button class="subnavbtn">Visit</button>
-                  <div class="subnav-content">
-                    <a href="./info.html">Info</a>
-                    <a href="./book.php">Book a visit</a>
-                  </div>
-                </div>
-                <a href="./contact.html">Contact</a>
-              </div>
+            <div id="disclaimer" > 
+            <input type="button" name="close" id="close" value="X" onclick="closeDisclaimer();">
+               <p class="redText">ATTENTION!</p> In our museum wearing the mask is mandatory in order to prevent the spread of disease and viruses especially during the Coronavirus (COVID-19) pandemic 
+              </div> 
               <footer id="footer"> CNM &copy; Copyright 2022 - All rights reserved</footer>
     </body>
 </html>

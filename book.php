@@ -8,14 +8,10 @@
         <link rel="icon" type="image/x-icon" href="logos/logo.svg">
     </head>
     <body>
-                <!--Script useful to execute query on the DB, delete reservations prior to today's-->
         <?php
             $servername = "localhost";
             $con = mysqli_connect($servername, "root", "root");
-
-            // Check connection
-            if (!$con) { die('Could not connect: ' . mysqli_error($con)); }
-        
+            if (!$con) { die('Could not connect: ' . mysqli_error($con)); }        
             mysqli_select_db($con,"mydb");
             $d = date("Y-m-d", strtotime('today'));
             $sql = "DELETE FROM `reservation` WHERE `dates` < '$d'";
@@ -23,7 +19,26 @@
             mysqli_close($con);
         ?>
         <header id="header"><br> <img class = "headerImage" src="logos/logo.svg" alt="logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
-            <article class="content"> <h1>Book a Guided Visit</h1> <br>
+        <div class="navbar">
+            <a href="./index.php">Home</a>
+            <div class="subnav">
+                <button class="subnavbtn">Collections <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="./botany.php">Botany</a>
+                    <a href="./zoology.php">Zoology</a>
+                    <a href="./mineralogy.php">Mineralogy</a>
+                </div>
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="./info.html">Info</a>
+                    <a href="./book.php">Book a visit</a>
+                </div>
+            </div>
+            <a href="./contact.html">Contact</a>
+        </div>
+        <article class="content"> <h1>Book a Guided Visit</h1> <br>
                   <form name="reservationForm" action="reservation.php" method="post">
                     <label for="firstName">First Name:</label> 
                     <input type="text" name="firstName" id="firstName" required> <br><br>
@@ -59,7 +74,7 @@
                       <li>Tuesday, Friday afternoon :   <p class="redText">CLOSED</p>(15:00-18:00)</li>
                       <li>Monday, Wednesday, Thursday, Saturday, Sunday afternoon :<br><p class="blueText">OPEN (ONLY BASIC visits)</p>(15:00-18:00)</li>
                     </ul>
-                   </article> 
+                  </article> 
                   <table id="times">
                     <tr>
                         <td>
@@ -114,7 +129,7 @@
                         <td colspan="2" class="closed">CLOSED</td>
                     </tr>
                     <tr>
-                        <td  >
+                        <td>
                             Wednesday
                         </td>
                             <td class="guided" >OPEN (Guided Visit)</td>
@@ -124,7 +139,7 @@
                             <td colspan="2" class= "open">OPEN</td>
                     </tr>
                     <tr>
-                        <td  >
+                        <td>
                             Thursday
                         </td>
                         <td class="guided" >OPEN (Guided Visit)</td>
@@ -134,7 +149,7 @@
                         <td colspan="2" class= "open">OPEN</td>
                     </tr>
                     <tr>
-                        <td  >
+                        <td>
                             Friday
                         </td>
                         <td class="guided" >OPEN (Guided Visit)</td>
@@ -144,7 +159,7 @@
                         <td colspan="2" class= "closed">CLOSED</td>
                     </tr>
                     <tr>
-                        <td  >
+                        <td>
                             Saturday
                         </td>
                         <td class="guided" >OPEN (Guided Visit)</td>
@@ -154,7 +169,7 @@
                         <td colspan="2" class= "open">OPEN</td>
                     </tr>
                     <tr>
-                      <td  >
+                      <td>
                           Sunday
                       </td>
                       <td class="guided" >OPEN (Guided Visit)</td>
@@ -162,28 +177,9 @@
                       <td class="guided" >OPEN (Guided Visit)</td>
                       <td class="guided" >OPEN (Guided Visit)</td>
                       <td colspan="2" class= "open">OPEN</td>
-                  </tr>
-                </table> 
-            </article>
-            <div class="navbar">
-                <a href="./index.php">Home</a>
-                <div class="subnav">
-                  <button class="subnavbtn">Collections <i class="fa fa-caret-down"></i></button>
-                  <div class="subnav-content">
-                    <a href="./botany.php">Botany</a>
-                    <a href="./zoology.php">Zoology</a>
-                    <a href="./mineralogy.php">Mineralogy</a>
-                  </div>
-                </div>
-                <div class="subnav">
-                  <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
-                  <div class="subnav-content">
-                    <a href="./info.html">Info</a>
-                    <a href="./book.php">Book a visit</a>
-                  </div>
-                </div>
-                <a href="./contact.html">Contact</a>
-              </div>
-              <footer id="footer"> CNM &copy; Copyright 2022 - All rights reserved</footer>
+                    </tr>
+                  </table> 
+        </article>
+        <footer id="footer"> CNM &copy; Copyright 2022 - All rights reserved</footer>
     </body>
 </html>

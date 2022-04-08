@@ -10,44 +10,42 @@
     </head>
     <body>
       <header id="header"><br> <img class = "headerImage" src="logos/logo.svg" alt="CNM logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
-            <article class="content"> <h1>Contact Us</h1>
-                  <h3>Do you need further information? Please contact us through this form!</h3>
-                  <br>
-                  <form name="contact" action="contactReservation.php" method="post">
-                    <label for="firstName">First Name:</label> 
-                    <input type="text" name="firstName" id="firstName" required> <br><br>
-                    <label for="familyName">Family Name: </label>
-                    <input type="text" name="familyName" id="familyName" required> <br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required> <br><br>
-                    <label for="subject">Subject:</label>
-                    <input type="text" name="subject" id="subject" required> <br><br>
-                    <label for="textarea">Message:</label>
-                    <textarea name="textarea" id="textarea" maxlength="65534" required></textarea> <br> <br>
-                    <input type="submit" name="submit" id="submit" value="Submit" onclick="checkContactForm();">
-                    <input type="reset" name="reset" id="reset" value="Reset"> <br><br>
-                  </form>
-                  <br> <hr> <br> <br> <br>
-            </article>
-            <div class="navbar">
-                <a href="./index.php">Home</a>
-                <div class="subnav">
-                  <button class="subnavbtn">Collections <i class="fa fa-caret-down"></i></button>
-                  <div class="subnav-content">
-                    <a href="./botany.php">Botany</a>
-                    <a href="./zoology.php">Zoology</a>
-                    <a href="./mineralogy.php">Mineralogy</a>
-                  </div>
-                </div>
-                <div class="subnav">
-                  <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
-                  <div class="subnav-content">
-                    <a href="./info.html">Info</a>
-                    <a href="./book.php">Book a visit</a>
-                  </div>
-                </div>
-                <a href="./contact.html">Contact</a>
-              </div>
-              <footer id="footer"> CNM &copy; Copyright 2022 - All rights reserved</footer>
+      <div class="navbar">
+        <a href="./index.php">Home</a>
+        <div class="subnav">
+          <button class="subnavbtn">Collections <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="./botany.php">Botany</a>
+            <a href="./zoology.php">Zoology</a>
+            <a href="./mineralogy.php">Mineralogy</a>
+          </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="./info.html">Info</a>
+            <a href="./book.php">Book a visit</a>
+          </div>
+        </div>
+        <a href="./contact.html">Contact</a>
+      </div>
+      <article class="content"> <h1>Contact Us</h1>
+        <h3>Do you need further information? Please contact us through this form!</h3><br>
+        <form name="contact" action="contactReservation.php" method="post">
+          <label for="firstName">First Name:</label> 
+          <input type="text" name="firstName" id="firstName" required> <br><br>
+          <label for="familyName">Family Name: </label>
+          <input type="text" name="familyName" id="familyName" required> <br><br>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required> <br><br>
+          <label for="subject">Subject:</label>
+          <input type="text" name="subject" id="subject" required> <br><br>
+          <label for="textarea">Message:</label>
+          <textarea name="textarea" id="textarea" maxlength="65534" required></textarea> <br> <br>
+          <input type="submit" name="submit" id="submit" value="Submit" onclick="checkContactForm();">
+          <input type="reset" name="reset" id="reset" value="Reset"> <br><br>
+        </form><br> <hr> <br> <br> <br>
+      </article>
+      <footer id="footer"> CNM &copy; Copyright 2022 - All rights reserved</footer>
     </body>
 </html>
