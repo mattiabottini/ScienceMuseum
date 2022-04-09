@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <title> Book a Visit </title>
-        <link rel="stylesheet" type="text/css" href="./mycss.css">
-        <script src="myJS.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/mycss.css">
+        <script src="javascript/myJS.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="logos/logo.svg">
     </head>
@@ -22,7 +22,7 @@
         <div class="navbar">
             <a href="./index.php">Home</a>
             <div class="subnav">
-                <button class="subnavbtn">Collections <i class="fa fa-caret-down"></i></button>
+                <button class="subnavbtn">Collections</button>
                 <div class="subnav-content">
                     <a href="./botany.php">Botany</a>
                     <a href="./zoology.php">Zoology</a>
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="subnav">
-                <button class="subnavbtn">Visit <i class="fa fa-caret-down"></i></button>
+                <button class="subnavbtn">Visit</button>
                 <div class="subnav-content">
                     <a href="./info.html">Info</a>
                     <a href="./book.php">Book a visit</a>

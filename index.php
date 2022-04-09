@@ -3,12 +3,13 @@
     <head>
       <meta charset="UTF-8">
         <title> Science Museum </title>
-        <link rel="stylesheet" type="text/css" href="./mycss.css">
+        <link rel="stylesheet" type="text/css" href="css/mycss.css">
         <link rel="icon" type="image/x-icon" href="logos/logo.svg">
-        <script src="myJS.js"></script>
+        <script src="javascript/myJS.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+            <div id="skip"><a href="#contentHome">Skip to main content</a></div>
             <header id="header"><br> <img class = "headerImage" src="logos/logo.svg" alt="CNM Logo"><a class="header" href="./index.php">National Museum of Colorado</a></header>
             <div class="navbar">
                 <a href="./index.php">Home</a>
@@ -29,7 +30,6 @@
                 </div>
                 <a href="./contact.html">Contact</a>
               </div>
-              <div id="skip"><a href="#contentHome">Skip to main content</a></div>
             <article id="contentHome"> 
               <br> <br>
               <h2 id="changeText">Botanical Museum</h2>
