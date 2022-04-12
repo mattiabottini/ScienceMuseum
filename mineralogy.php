@@ -44,8 +44,8 @@
             <?php
               while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
               echo "<tr><td>" . $row['name'] . "</td><td>" . $row['category'] . "</td><td>" . $row['color'] . "</td><td>" . $row['hardness'] . "</td><td>" . $row['museumSection'] . "</td><td class='lastRow'>" . '<img class="tableImage" src="data:image/jpeg;base64,'.base64_encode($row['image']).'"alt="mineral image"/>' . "</td></tr>";
-              mysqli_close($con);
               }
+              mysqli_close($con);
             ?>
           </table>
         </article>

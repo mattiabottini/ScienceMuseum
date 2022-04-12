@@ -1,4 +1,4 @@
-window.onload= function changeText(){
+function changeText(){
     var text = ["Zoological Museum", "Mineralogical Museum", "Archaeological Museum", "Botanical Museum"];
     var counter = 0;
     var elem = document.getElementById("changeText");
@@ -37,7 +37,7 @@ function exists(input) {
     var atLeastOneChar = false;
     if (input) {
       for (var i=0; i<input.length; i++) {
-        if (input.charAt(i) != " " || input.charAt(i) != "-") {
+        if (input.charAt(i) != " ") {
           atLeastOneChar = true;
   break; }
   } }

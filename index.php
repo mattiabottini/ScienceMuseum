@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/mycss.css">
         <link rel="icon" type="image/x-icon" href="logos/logo.svg">
         <script src="javascript/myJS.js"></script>
+        <script> window.onload = changeText; </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
